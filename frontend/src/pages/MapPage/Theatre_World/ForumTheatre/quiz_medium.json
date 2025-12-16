@@ -1,0 +1,264 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary role of a 'spect-actor' in a Forum Theatre performance?",
+      "answerOptions": [
+        {
+          "text": "To provide verbal feedback and suggestions to the actors from their seat.",
+          "rationale": "While audience feedback is important, the role of a 'spect-actor' is more direct and participatory than just offering verbal comments.",
+          "isCorrect": false
+        },
+        {
+          "text": "To be both an observer and an active participant who can enter the play to test a new strategy.",
+          "rationale": "This term combines 'spectator' and 'actor' to describe an audience member who can stop the play and physically replace a character to try out an alternative action.",
+          "isCorrect": true
+        },
+        {
+          "text": "To act out a pre-written alternative ending provided by the facilitator.",
+          "rationale": "Forum Theatre emphasizes spontaneous, audience-generated ideas rather than following a script provided by the facilitator.",
+          "isCorrect": false
+        },
+        {
+          "text": "To judge the performance and vote on the most effective solution presented.",
+          "rationale": "The process is about exploring possibilities rather than judging or selecting a single 'winning' solution.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about how the term itself combines two distinct roles that are usually separate in traditional theatre."
+    },
+    {
+      "question": "According to the guide, what is the facilitator's core attitude during the audience interaction phase of Forum Theatre?",
+      "answerOptions": [
+        {
+          "text": "Didactic, explaining the moral lesson of the play after each intervention.",
+          "rationale": "The facilitator's role is not to teach a specific lesson, but to help the community discover its own insights.",
+          "isCorrect": false
+        },
+        {
+          "text": "Authoritative, guiding the audience toward a pre-determined effective solution.",
+          "rationale": "This approach is contrary to the principle that the community, not the facilitator, holds the potential solutions.",
+          "isCorrect": false
+        },
+        {
+          "text": "Passive, observing the interaction without intervening or asking questions.",
+          "rationale": "The facilitator actively guides the dialogue and process, even though they don't provide answers.",
+          "isCorrect": false
+        },
+        {
+          "text": "'Maieutic,' acting as a midwife to help the community discover and 'give birth' to its own solutions.",
+          "rationale": "This Socratic approach means the facilitator helps draw out ideas from the audience without imposing their own.",
+          "isCorrect": true
+        }
+      ],
+      "hint": "The guide compares the facilitator's role to that of an ancient Greek philosopher's method of inquiry."
+    },
+    {
+      "question": "What is the correct procedure for an audience member to initiate an intervention in a Forum Theatre play?",
+      "answerOptions": [
+        {
+          "text": "Shouting 'stop!' when they see an oppressed character making a mistake.",
+          "rationale": "This is the explicit signal for the actors to freeze, allowing an audience member to propose and enact a different course of action.",
+          "isCorrect": true
+        },
+        {
+          "text": "Raising their hand silently and waiting for the facilitator to grant them permission.",
+          "rationale": "The intervention is designed to be a more active and immediate interruption of the oppressive cycle.",
+          "isCorrect": false
+        },
+        {
+          "text": "Waiting until the end of a scene to offer their thoughts during a scheduled break.",
+          "rationale": "Interventions happen at the precise moment the audience member identifies a critical error, not at a pre-set time.",
+          "isCorrect": false
+        },
+        {
+          "text": "Walking onto the stage unannounced to join the dialogue.",
+          "rationale": "While the process is participatory, there is a specific rule and signal to ensure the process remains structured.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The action is meant to be a decisive and immediate way to halt the oppressive mechanism shown on stage."
+    },
+    {
+      "question": "After a 'spect-actor' has performed their alternative strategy on stage, what is the facilitator's immediate next step?",
+      "answerOptions": [
+        {
+          "text": "To declare whether the new strategy was successful or not.",
+          "rationale": "The facilitator avoids making personal judgments about the effectiveness of a proposed strategy.",
+          "isCorrect": false
+        },
+        {
+          "text": "To ask the oppressor characters if they found the strategy convincing.",
+          "rationale": "While their reaction is part of the performance, the main focus shifts to a broader group reflection first.",
+          "isCorrect": false
+        },
+        {
+          "text": "To facilitate a discussion with the entire audience about the consequences of the tested strategy.",
+          "rationale": "The goal is to foster collective reflection on what happened, what changed, and what the potential real-life outcomes might be.",
+          "isCorrect": true
+        },
+        {
+          "text": "To immediately restart the scene for another audience member to try their idea.",
+          "rationale": "The process values a period of collective analysis and discussion before moving on to another intervention.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The process emphasizes collective learning and reflection after an idea is physically tested."
+    },
+    {
+      "question": "Which statement best explains why Forum Theatre does not aim to provide one single 'solution' to the problem presented?",
+      "answerOptions": [
+        {
+          "text": "The actors are not trained to know the correct answer to complex social issues.",
+          "rationale": "While true, the core reason lies in the philosophy of the method, not just the actors' training.",
+          "isCorrect": false
+        },
+        {
+          "text": "Finding a single solution would make the performance less entertaining for the audience.",
+          "rationale": "The objective of Forum Theatre is social exploration and empowerment, not just entertainment.",
+          "isCorrect": false
+        },
+        {
+          "text": "The process is a 'social laboratory' for testing many alternatives, recognizing that different strategies may work in different contexts.",
+          "rationale": "This reflects the understanding that complex problems rarely have a single, universally applicable solution.",
+          "isCorrect": true
+        },
+        {
+          "text": "It is too difficult to get an entire audience to agree on one final answer.",
+          "rationale": "The goal isn't consensus, but rather the exploration of multiple pathways and ideas.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think of the performance as a rehearsal for reality, where multiple approaches can be tried in a safe environment."
+    },
+    {
+      "question": "How does a Forum Theatre play typically end its initial run, before any audience intervention begins?",
+      "answerOptions": [
+        {
+          "text": "With the oppressor character realizing their mistake and offering an apology.",
+          "rationale": "This would resolve the conflict, leaving no problem for the audience to address.",
+          "isCorrect": false
+        },
+        {
+          "text": "With the oppressed character being defeated or failing to achieve their legitimate desire.",
+          "rationale": "This unresolved negative outcome serves as the catalyst, motivating the audience to intervene and seek a better result.",
+          "isCorrect": true
+        },
+        {
+          "text": "With an ally character successfully intervening to save the protagonist.",
+          "rationale": "If an ally already solves the problem, there is no need for the audience to explore their own strategies.",
+          "isCorrect": false
+        },
+        {
+          "text": "With an ambiguous ending where the outcome of the conflict is unclear.",
+          "rationale": "The guide specifies that the play ends with a clear defeat for the oppressed to highlight the problem.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The initial ending must present a clear problem that the audience feels a need to solve."
+    },
+    {
+      "question": "When a 'spect-actor' intervenes, which character are they typically invited to replace on stage?",
+      "answerOptions": [
+        {
+          "text": "The oppressor, to demonstrate how that character could act more compassionately.",
+          "rationale": "The focus is on finding strategies for those who are struggling, not on rehabilitating the oppressor.",
+          "isCorrect": false
+        },
+        {
+          "text": "A neutral bystander, to show how an outsider can solve the conflict.",
+          "rationale": "While replacing a bystander is possible, the primary focus is typically on the person directly experiencing the oppression.",
+          "isCorrect": false
+        },
+        {
+          "text": "The character they have identified as the most oppressed in the situation.",
+          "rationale": "The intervention is an attempt to empower the protagonist by exploring different actions from their perspective.",
+          "isCorrect": true
+        },
+        {
+          "text": "Any character they find most interesting, regardless of their role in the conflict.",
+          "rationale": "The replacement is purposeful and tied to changing the dynamics of oppression, not just exploring a character.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The intervention aims to empower the person who is struggling within the narrative."
+    },
+    {
+      "question": "How does Forum Theatre's method of exploring ideas differ from a conventional debate?",
+      "answerOptions": [
+        {
+          "text": "In Forum Theatre, the facilitator decides which argument is the most logical.",
+          "rationale": "This would contradict the facilitator's non-judgmental, 'maieutic' role.",
+          "isCorrect": false
+        },
+        {
+          "text": "The goal of Forum Theatre is to reach a unanimous verbal agreement.",
+          "rationale": "The focus is on exploration through action, not on achieving verbal consensus.",
+          "isCorrect": false
+        },
+        {
+          "text": "Forum Theatre relies on 'embodied ideas,' where proposed strategies are physically acted out and tested.",
+          "rationale": "This use of the entire body to test alternatives is a key distinction from purely intellectual or verbal discussions.",
+          "isCorrect": true
+        },
+        {
+          "text": "Only people with professional expertise on the topic are allowed to speak.",
+          "rationale": "Forum Theatre is inclusive and values the lived experience of all community members.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider how the process involves the entire body in the search for alternatives, not just the mind."
+    },
+    {
+      "question": "What is the main purpose of the 'de-rolling' exercise that takes place after the audience has left?",
+      "answerOptions": [
+        {
+          "text": "To help the actors distance themselves from the emotions and mindsets of their characters.",
+          "rationale": "This is a crucial step for actors to shed their roles, especially oppressive ones, and return to themselves.",
+          "isCorrect": true
+        },
+        {
+          "text": "To plan the next performance and decide on follow-up actions in the community.",
+          "rationale": "While follow-up actions may be discussed, the primary goal of this specific exercise is psychological.",
+          "isCorrect": false
+        },
+        {
+          "text": "To allow the actors to critique each other's performance during the play.",
+          "rationale": "The focus is on personal well-being and processing the experience, not on performance critique.",
+          "isCorrect": false
+        },
+        {
+          "text": "To give the facilitator a final chance to explain the meaning of the play.",
+          "rationale": "This exercise is for the actors' benefit, and the facilitator's role is again to guide, not to lecture.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about the psychological impact of embodying a character, especially a negative one, during an intense performance."
+    },
+    {
+      "question": "If a 'spect-actor's' intervention seems unrealistic, what is the facilitator's most appropriate action?",
+      "answerOptions": [
+        {
+          "text": "Immediately stop the intervention and explain why it would not work.",
+          "rationale": "The facilitator avoids being the ultimate judge of an idea's realism.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ask the audience if they believe the proposed strategy is realistic and discuss its consequences.",
+          "rationale": "The facilitator turns the question back to the collective group, empowering them to assess the realism of the proposed action.",
+          "isCorrect": true
+        },
+        {
+          "text": "Instruct the other actors to react in a way that proves the strategy is unrealistic.",
+          "rationale": "The actors' role is to react authentically within their characters, not to deliberately sabotage an intervention.",
+          "isCorrect": false
+        },
+        {
+          "text": "Modify the 'spect-actor's' idea to make it more practical before allowing it to be performed.",
+          "rationale": "The facilitator's job is to let the audience member's idea be tested as proposed, not to edit it beforehand.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The facilitator's role is to empower the community to be the judge of what is possible."
+    }
+  ]
+}

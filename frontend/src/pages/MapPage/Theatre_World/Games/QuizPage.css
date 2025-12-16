@@ -1,0 +1,44 @@
+/* Theatre-specific character container placeholder */
+.tw-character-container {
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    width: 55%;
+    height: 65%;
+    overflow: hidden;
+    background: transparent;
+    z-index: 6;
+    pointer-events: none;
+    transform-origin: bottom left;
+}
+
+/* Hide browser extension overlays */
+.tw-character-container>*:not(video) {
+    display: none !important;
+}
+
+.tw-character-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background: transparent;
+}
+
+/* Hide all video controls */
+.tw-character-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.tw-character-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.tw-character-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.tw-character-video::-moz-media-controls {
+    display: none !important;
+}
+

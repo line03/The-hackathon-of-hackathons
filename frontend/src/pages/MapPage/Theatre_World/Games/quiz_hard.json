@@ -1,0 +1,108 @@
+{
+  "quiz": [
+    {
+      "question": "During the 'From personal stories' exercise, a student shares a traumatic story of being forced into a gang, becoming visibly distressed. The story includes specific names and locations. What is the facilitator's most appropriate immediate action?",
+      "answerOptions": [
+        {
+          "text": "Immediately stop the exercise and start a lighter, non-verbal game to de-escalate the tension in the room.",
+          "isCorrect": false,
+          "rationale": "While changing the mood might seem helpful, this action can inadvertently dismiss the student's contribution and fail to address their distress in a supportive manner."
+        },
+        {
+          "text": "Thank the student for their courage, ask the group to show respect, and then privately check if the student is comfortable continuing, assuring them the story will be generalized to protect their identity.",
+          "isCorrect": true,
+          "rationale": "This response prioritizes the student's well-being and agency, creates a supportive group environment, and adheres to the ethical precaution of avoiding re-victimization and retaliation."
+        },
+        {
+          "text": "Encourage the student to continue, recognizing that the authentic emotion will make the resulting play more powerful and impactful for the audience.",
+          "isCorrect": false,
+          "rationale": "This approach prioritizes the theatrical product over the participant's emotional safety, creating a high risk of re-victimizing the student."
+        },
+        {
+          "text": "Open a discussion with the entire group about how they could help the student with their real-life situation, turning the moment into a collective problem-solving session.",
+          "isCorrect": false,
+          "rationale": "The facilitator's role is not that of a therapist. Shifting the focus to solving a real-life problem goes beyond the scope of Forum Theatre and can put the student in an even more vulnerable position."
+        }
+      ],
+      "hint": "Consider the facilitator's dual responsibility to both honor the participant's experience and ensure a safe, non-judgmental environment."
+    },
+    {
+      "question": "In a Forum Theatre play about corruption, an influential community leader in the audience replaces the oppressed character and demonstrates a solution that involves using their personal connections to solve the problem. The audience applauds, but this 'solution' is not accessible to most people. What should the facilitator do next?",
+      "answerOptions": [
+        {
+          "text": "Acknowledge the effectiveness of the proposed solution and ask the audience if there are any other problems they would like to solve.",
+          "isCorrect": false,
+          "rationale": "This accepts a 'magical solution' that isn't universally applicable, thereby closing off further exploration of strategies available to the entire community."
+        },
+        {
+          "text": "Thank the leader for their contribution, then ask the audience: 'This strategy worked for this person. What resources or strategies could someone without these connections use?'",
+          "isCorrect": true,
+          "rationale": "This action respects the intervention while skillfully redirecting the focus back to accessible, community-based strategies, thereby fulfilling the maieutic role of questioning and exploring alternatives for everyone."
+        },
+        {
+          "text": "Point out to the community leader that their solution relies on special privileges and is not a realistic option for the play's protagonist.",
+          "isCorrect": false,
+          "rationale": "Directly challenging or judging a participant's idea violates the non-judgmental principle; the facilitator's role is to ask questions that allow the audience to analyze the strategy."
+        },
+        {
+          "text": "Explain to the audience that using personal connections is a form of soft corruption and is not a valid way to fight for one's rights.",
+          "isCorrect": false,
+          "rationale": "The facilitator does not take a moral or political position on the strategies proposed. Their function is to facilitate dialogue, not to lecture or impose their own ideology."
+        }
+      ],
+      "hint": "The facilitator's role is described as 'maieutic,' like a midwife, helping the community give birth to its own ideas rather than providing the solution."
+    },
+    {
+      "question": "A group of students develops a play about a boy being recruited into a gang. Their story ends with the boy successfully refusing the gang, getting help from a teacher, and the gang leader being arrested. Why should the facilitator guide the group to change this ending before the performance?",
+      "answerOptions": [
+        {
+          "text": "The ending is too optimistic and doesn't accurately reflect the dangers of gang violence in the community.",
+          "isCorrect": false,
+          "rationale": "While realism is important, the primary issue is not the optimism of the ending but its function within the Forum Theatre structure."
+        },
+        {
+          "text": "The play's ending presents a complete solution, leaving no unresolved conflict for the audience to engage with and try to change.",
+          "isCorrect": true,
+          "rationale": "A Forum Theatre play must end with the protagonist's defeat to present an open question to the 'spect-actors,' inviting them to step on stage and test their own strategies for change."
+        },
+        {
+          "text": "The story could be seen as anti-police or anti-authority, which might jeopardize partnerships with the school.",
+          "isCorrect": false,
+          "rationale": "While facilitators must consider risks, the core methodological reason for changing the ending is rooted in the purpose of the Forum, not primarily in external relationship management."
+        },
+        {
+          "text": "The protagonist is shown as a hero, which is less interesting dramatically than a flawed character.",
+          "isCorrect": false,
+          "rationale": "The need for a flawed protagonist is directly linked to the need for an unresolved problem; the resolution itself is the key element that must be changed."
+        }
+      ],
+      "hint": "Think about what a Forum Theatre play is supposed to *do* rather than what it is supposed to *show*."
+    },
+    {
+      "question": "During the 'Samurai' activation game, a student who keeps making mistakes is repeatedly 'celebrated' and sent to the middle to 'pass out.' The facilitator notices the student is becoming genuinely embarrassed and withdrawn, despite the game's intention to make mistakes positive. What is the facilitator's best course of action?",
+      "answerOptions": [
+        {
+          "text": "Continue the game as designed, as it's important to teach the entire group the principle of celebrating mistakes.",
+          "isCorrect": false,
+          "rationale": "Adhering rigidly to an exercise's rules at the expense of a participant's emotional well-being undermines the trust necessary for the workshop."
+        },
+        {
+          "text": "Stop the game and ask the student directly in front of the group why they are not enjoying the celebration.",
+          "isCorrect": false,
+          "rationale": "This puts the student on the spot, potentially increasing their embarrassment and violating the principle of creating a safe environment."
+        },
+        {
+          "text": "Subtly change the rules for everyone without singling the student out, perhaps by saying, 'Okay, new rule! From now on, when you make a mistake, you strike a victory pose and stay in the circle!'",
+          "isCorrect": true,
+          "rationale": "This action adapts the exercise in real-time to protect a participant's feelings, maintain a positive group dynamic, and achieve the game's objective without causing distress."
+        },
+        {
+          "text": "Quietly tell the student they can sit out for the rest of the game if they are not comfortable.",
+          "isCorrect": false,
+          "rationale": "While this removes the student from the immediate source of stress, it can also lead to their exclusion and fails to adapt the activity for the benefit of the whole group."
+        }
+      ],
+      "hint": "A key facilitation skill is observing the group's energy and adapting exercises to ensure they remain inclusive, fun, and psychologically safe."
+    }
+  ]
+}

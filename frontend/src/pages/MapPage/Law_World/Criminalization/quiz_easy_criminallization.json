@@ -1,0 +1,83 @@
+{
+  "quiz": [
+    {
+      "question": "A government official in charge of public works awards a construction contract to a company owned by their cousin, even though another company submitted a lower bid with better qualifications. The official did not receive any money but wanted to help their family. Which offense under the UNCAC does this action most closely represent?",
+      "answerOptions": [
+        {
+          "text": "Bribery in the private sector",
+          "isCorrect": false,
+          "rationale": "This offense involves actions within private entities, whereas the scenario describes the actions of a public official."
+        },
+        {
+          "text": "Abuse of functions",
+          "isCorrect": true,
+          "rationale": "The official performed an act (awarding the contract) in violation of procurement laws for the purpose of obtaining an undue advantage for another person (their cousin)."
+        },
+        {
+          "text": "Embezzlement of property",
+          "isCorrect": false,
+          "rationale": "This act involves diverting property or funds entrusted to the official, not the improper awarding of a contract to benefit a third party."
+        },
+        {
+          "text": "Laundering of proceeds of crime",
+          "isCorrect": false,
+          "rationale": "This scenario does not involve concealing or disguising the origin of assets derived from a criminal act."
+        }
+      ],
+      "hint": "Think about whether the official is misusing their position to provide an unfair benefit, even without a direct payment."
+    },
+    {
+      "question": "A public official uses a government-issued credit card, intended for office supplies, to purchase a personal home theater system. Which offense, as defined in the UNCAC, has the official committed?",
+      "answerOptions": [
+        {
+          "text": "Trading in influence",
+          "isCorrect": false,
+          "rationale": "This offense involves using real or supposed influence to obtain an undue advantage from an administration, not the direct theft of entrusted funds."
+        },
+        {
+          "text": "Bribery of a national public official",
+          "isCorrect": false,
+          "rationale": "This act does not involve accepting an undue advantage from an external party in exchange for an official act."
+        },
+        {
+          "text": "Illicit enrichment",
+          "isCorrect": false,
+          "rationale": "While this action contributes to the official's assets, illicit enrichment refers to the inability to explain a significant increase in overall assets, not a specific act of theft."
+        },
+        {
+          "text": "Embezzlement, misappropriation or other diversion of property",
+          "isCorrect": true,
+          "rationale": "The official diverted public funds entrusted to them by virtue of their position for their own personal benefit."
+        }
+      ],
+      "hint": "Consider the term for when an official takes funds they are responsible for and uses them for personal gain."
+    },
+    {
+      "question": "A corporate executive offers a high-ranking customs officer an all-expenses-paid luxury vacation. In return, the executive asks the officer to approve the import of their company's goods without the required inspections. According to the UNCAC, what criminal act is the executive attempting to commit?",
+      "answerOptions": [
+        {
+          "text": "Obstruction of justice",
+          "isCorrect": false,
+          "rationale": "This involves interfering with testimony or the duties of a justice official, not influencing a customs official with a benefit."
+        },
+        {
+          "text": "Bribery of a national public official",
+          "isCorrect": true,
+          "rationale": "This action involves the offering of an undue advantage (a vacation) to a public official so that the official will act or refrain from acting in the exercise of their duties."
+        },
+        {
+          "text": "Abuse of functions",
+          "isCorrect": false,
+          "rationale": "This term applies to the actions of the public official who misuses their position, not the person offering the bribe."
+        },
+        {
+          "text": "Embezzlement in the private sector",
+          "isCorrect": false,
+          "rationale": "This act involves theft of property within a private company, not influencing a public official."
+        }
+      ],
+      "hint": "Focus on the act of offering something of value to an official to influence their official duties."
+    }
+  ]
+}
+

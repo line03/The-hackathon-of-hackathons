@@ -1,0 +1,265 @@
+{
+  "quiz": [
+    {
+      "question": "An international company promises a government contract manager in State X a high-paying job for their spouse in exchange for favorable treatment in a bidding process. According to the UN Convention against Corruption, which offense should State X's laws be equipped to prosecute?",
+      "answerOptions": [
+        {
+          "text": "Bribery of a national public official.",
+          "isCorrect": true,
+          "rationale": "Article 15 covers the promise or giving of an undue advantage to a public official, directly or indirectly, for the official or another person, to influence their official duties."
+        },
+        {
+          "text": "Trading in influence.",
+          "isCorrect": false,
+          "rationale": "This involves abusing real or supposed influence to obtain an undue advantage from an administration, which is a slightly different concept than directly bribing an official for a specific act."
+        },
+        {
+          "text": "Abuse of functions.",
+          "isCorrect": false,
+          "rationale": "While the official's acceptance would be an abuse of functions, the act of offering the bribe by the company is specifically addressed as bribery."
+        },
+        {
+          "text": "Laundering of proceeds of crime.",
+          "isCorrect": false,
+          "rationale": "This offense relates to concealing the illicit origin of property derived from a crime, which would be a subsequent act, not the initial act of bribery itself."
+        }
+      ],
+      "hint": "Focus on the specific article that addresses offering an undue advantage to a domestic public official."
+    },
+    {
+      "question": "During a major corruption investigation, a key witness is threatened with physical harm to prevent them from testifying. What type of measure is a State Party required to adopt to handle this situation?",
+      "answerOptions": [
+        {
+          "text": "Measures to criminalize the obstruction of justice.",
+          "isCorrect": true,
+          "rationale": "Article 25 explicitly requires States Parties to establish as a criminal offense the use of threats or intimidation to interfere with the giving of testimony."
+        },
+        {
+          "text": "Mandatory relocation of the witness to another country.",
+          "isCorrect": false,
+          "rationale": "While relocation is a possible protection measure under Article 32, it is a consideration and not a mandatory response; criminalizing the threat itself is the required first step."
+        },
+        {
+          "text": "Offering immunity from prosecution to the person making the threat.",
+          "isCorrect": false,
+          "rationale": "Immunity is considered for those who cooperate with an investigation (Article 37), not for those who commit new offenses like obstruction of justice."
+        },
+        {
+          "text": "Suspending the trial until the threat can be neutralized by law enforcement.",
+          "isCorrect": false,
+          "rationale": "While a court may decide to postpone proceedings, the Convention's primary focus is on establishing a legal framework to criminalize the threatening act itself."
+        }
+      ],
+      "hint": "Consider the term used when someone illegally interferes with legal proceedings."
+    },
+    {
+      "question": "A corporation is found to have systematically paid bribes to win public contracts. The individuals who paid the bribes are being prosecuted. Under the Convention, what is the State Party's obligation regarding the corporation itself?",
+      "answerOptions": [
+        {
+          "text": "To establish the liability of the corporation and subject it to effective sanctions.",
+          "isCorrect": true,
+          "rationale": "Article 26 requires States Parties to establish the liability of legal persons (like corporations) and ensure they face effective, proportionate, and dissuasive sanctions."
+        },
+        {
+          "text": "To prosecute only the natural persons involved, as a corporation cannot have criminal intent.",
+          "isCorrect": false,
+          "rationale": "This view is inconsistent with the Convention, which explicitly states that the liability of legal persons shall be established without prejudice to the liability of the natural persons."
+        },
+        {
+          "text": "To mandate the dissolution of the corporation as the only acceptable sanction.",
+          "isCorrect": false,
+          "rationale": "The Convention calls for effective sanctions, which can include monetary ones; it does not prescribe a single, specific type of sanction like dissolution."
+        },
+        {
+          "text": "To allow the corporation to pay compensation to the state in lieu of facing any form of liability.",
+          "isCorrect": false,
+          "rationale": "Compensation may be a consequence, but the Convention requires establishing formal liability (criminal, civil, or administrative) for the offense itself."
+        }
+      ],
+      "hint": "Think about whether only individuals can be held responsible for corruption offenses according to the Convention."
+    },
+    {
+      "question": "A public official is accused of a grave corruption offense. While awaiting trial, their defense argues for release based on their status. What principle must the State Party balance when making this decision?",
+      "answerOptions": [
+        {
+          "text": "The rights of the defense with the need to ensure the defendant's presence at future proceedings.",
+          "isCorrect": true,
+          "rationale": "Article 30, paragraph 4, specifies that decisions on release pending trial should consider the need to ensure the defendant's presence at subsequent criminal proceedings, while respecting the rights of the defense."
+        },
+        {
+          "text": "The public's right to know with the official's right to privacy.",
+          "isCorrect": false,
+          "rationale": "While relevant in a broader sense, the Convention's specific guidance on pre-trial release focuses on balancing defense rights against the risk of the defendant absconding."
+        },
+        {
+          "text": "The severity of the punishment with the possibility of early parole.",
+          "isCorrect": false,
+          "rationale": "Early release or parole is a consideration for after a person is convicted (Article 30, paragraph 5), not for decisions on release pending trial."
+        },
+        {
+          "text": "The official's jurisdictional immunity with the need for a swift prosecution.",
+          "isCorrect": false,
+          "rationale": "The Convention addresses balancing immunities with the need to investigate and prosecute (Article 30, paragraph 2), but the specific decision on pre-trial release is about ensuring future court appearance."
+        }
+      ],
+      "hint": "Consider the primary concern for a court when deciding whether to release a defendant before their trial is complete."
+    },
+    {
+      "question": "Law enforcement in State B suspects that illicit funds from an embezzlement scheme have been deposited in a bank within its territory. To proceed with the investigation and eventual confiscation, what must their domestic legal system allow them to do regarding bank records?",
+      "answerOptions": [
+        {
+          "text": "Empower courts or other competent authorities to order that bank records be made available or seized.",
+          "isCorrect": true,
+          "rationale": "Article 31, paragraph 7, explicitly requires that States Parties empower their authorities to order the seizure of bank, financial, or commercial records, and specifies that bank secrecy is not a valid ground for refusal."
+        },
+        {
+          "text": "Request the voluntary cooperation of the bank, as bank secrecy laws take precedence.",
+          "isCorrect": false,
+          "rationale": "The Convention is clear in Article 31 and Article 40 that bank secrecy should not be an obstacle to domestic criminal investigations of corruption offenses."
+        },
+        {
+          "text": "Wait for the account holder to be convicted before accessing any financial records.",
+          "isCorrect": false,
+          "rationale": "Access to bank records is a crucial step for investigation and tracing assets, which must happen long before a conviction is secured."
+        },
+        {
+          "text": "Obtain permission from the financial authorities of the account holder's home country.",
+          "isCorrect": false,
+          "rationale": "The authority to compel the production of records for a domestic investigation rests with the domestic courts of the State Party where the bank is located."
+        }
+      ],
+      "hint": "Think about the specific obstacle the Convention seeks to overcome in financial investigations."
+    },
+    {
+      "question": "An accountant at a government agency reports a systematic bribery scheme to the authorities, acting in good faith. They are subsequently demoted and harassed at work. What should the State Party's legal system ideally provide in this scenario?",
+      "answerOptions": [
+        {
+          "text": "Protection against any unjustified treatment for the person reporting the offense.",
+          "isCorrect": true,
+          "rationale": "Article 33 encourages States Parties to incorporate measures into their domestic legal system to provide protection against unjustified treatment for those who report corruption offenses in good faith."
+        },
+        {
+          "text": "A mandatory financial reward equivalent to a percentage of the recovered funds.",
+          "isCorrect": false,
+          "rationale": "The Convention does not mandate financial rewards; its focus is on protecting reporting persons from retaliation."
+        },
+        {
+          "text": "Immunity from any future legal proceedings related to their employment.",
+          "isCorrect": false,
+          "rationale": "The protection is specifically against unjustified treatment resulting from the reporting, not a blanket immunity from all future work-related legal matters."
+        },
+        {
+          "text": "The right to prosecute their employer directly for obstruction of justice.",
+          "isCorrect": false,
+          "rationale": "While the employer's actions are wrong, the Convention frames the solution as protective measures for the reporter, not as a new right for them to initiate a specific type of prosecution."
+        }
+      ],
+      "hint": "The Convention has a specific article dedicated to protecting individuals often referred to as 'whistle-blowers'."
+    },
+    {
+      "question": "A former participant in a corruption scheme decides to cooperate with law enforcement, providing critical information that helps recover stolen assets. According to the Convention, what possibility should the State Party consider for this individual?",
+      "answerOptions": [
+        {
+          "text": "Mitigating their punishment or granting immunity from prosecution.",
+          "isCorrect": true,
+          "rationale": "Article 37 explicitly encourages States Parties to consider the possibility of mitigating punishment or granting immunity to accused persons who provide substantial cooperation."
+        },
+        {
+          "text": "Treating their cooperation as an admission of guilt that requires a maximum sentence.",
+          "isCorrect": false,
+          "rationale": "This approach would disincentivize cooperation, which is contrary to the spirit and letter of Article 37, which aims to encourage such assistance."
+        },
+        {
+          "text": "Requiring them to serve their full sentence before their information can be used in court.",
+          "isCorrect": false,
+          "rationale": "The purpose of cooperation is to aid active investigations and prosecutions; delaying the use of information would defeat this objective."
+        },
+        {
+          "text": "Providing witness protection but offering no change to their own criminal liability.",
+          "isCorrect": false,
+          "rationale": "While witness protection is important, Article 37 goes further by suggesting that a cooperator's own legal standing in the case could be favorably altered."
+        }
+      ],
+      "hint": "Think about how a legal system can incentivize an accused person to provide useful information to investigators."
+    },
+    {
+      "question": "A national from State C commits an act of bribery in State D. The alleged offender is later found in State E, which has jurisdiction but refuses to extradite them solely because they are a national of State E. What is State E's primary obligation under the Convention?",
+      "answerOptions": [
+        {
+          "text": "Submit the case to its own competent authorities for the purpose of prosecution.",
+          "isCorrect": true,
+          "rationale": "This is the principle of 'aut dedere aut judicare' (extradite or prosecute) found in Article 44, paragraph 11. If a State Party doesn't extradite its own national, it must prosecute them domestically."
+        },
+        {
+          "text": "Release the person, as the crime was not committed on its territory.",
+          "isCorrect": false,
+          "rationale": "This would violate the Convention's framework for ensuring there are no safe havens for offenders. Article 42 allows for establishing jurisdiction over nationals abroad."
+        },
+        {
+          "text": "Send the person to State C, the country of their original nationality, for trial.",
+          "isCorrect": false,
+          "rationale": "State E's obligation is to either extradite to the requesting state (State D) or prosecute itself; sending the person to a third country is not the specified procedure."
+        },
+        {
+          "text": "Hold the person indefinitely until it can negotiate a treaty with State D.",
+          "isCorrect": false,
+          "rationale": "The Convention itself can serve as a legal basis for action, and indefinite detention without proceeding to prosecution would violate principles of due process."
+        }
+      ],
+      "hint": "This scenario tests a fundamental principle in international criminal law: if you don't hand them over, what must you do?"
+    },
+    {
+      "question": "An investigation into an international money laundering scheme requires law enforcement in State F to use an undercover operation. What does the Convention say about such special investigative techniques?",
+      "answerOptions": [
+        {
+          "text": "Each State Party should take measures to allow for their appropriate use, as permitted by its domestic legal system.",
+          "isCorrect": true,
+          "rationale": "Article 50 states that, to the extent permitted by its legal principles, each State Party shall take necessary measures to allow for the use of techniques like undercover operations."
+        },
+        {
+          "text": "These techniques are strictly forbidden as they may constitute entrapment.",
+          "isCorrect": false,
+          "rationale": "The Convention explicitly encourages States Parties to consider using special investigative techniques to combat corruption effectively."
+        },
+        {
+          "text": "They are only permitted if conducted jointly with another State Party's law enforcement.",
+          "isCorrect": false,
+          "rationale": "The Convention encourages international cooperation but first establishes the basis for a State Party to use these techniques within its own territory for its own investigations."
+        },
+        {
+          "text": "Evidence gathered from undercover operations is automatically inadmissible in court.",
+          "isCorrect": false,
+          "rationale": "Article 50 specifically mentions allowing for the admissibility in court of evidence derived from such techniques."
+        }
+      ],
+      "hint": "Review the article that discusses non-traditional methods for gathering evidence in complex corruption cases."
+    },
+    {
+      "question": "A prosecutor is building a case against an official for embezzlement. The official laundered the proceeds by purchasing a yacht, which is now considered 'property derived from crime'. If the prosecutor successfully confiscates the yacht, what has the State Party achieved according to the Convention's principles?",
+      "answerOptions": [
+        {
+          "text": "Enabled the confiscation of proceeds of crime that have been transformed into other property.",
+          "isCorrect": true,
+          "rationale": "Article 31, paragraph 4, states that if proceeds of crime have been transformed or converted into other property, that new property shall be liable to confiscation."
+        },
+        {
+          "text": "Punished the official by seizing personal property unrelated to the crime.",
+          "isCorrect": false,
+          "rationale": "The Convention's confiscation measures are aimed specifically at proceeds of crime or property of equivalent value, not at unrelated personal assets as a form of punishment."
+        },
+        {
+          "text": "Completed the criminal proceedings against the official.",
+          "isCorrect": false,
+          "rationale": "Confiscation is a measure related to the proceeds of the crime; it is part of the sanctions and recovery process but does not in itself conclude the entire criminal adjudication."
+        },
+        {
+          "text": "Violated the official's property rights under domestic law.",
+          "isCorrect": false,
+          "rationale": "The Convention requires these measures to be implemented within a State's domestic legal system, establishing a legal basis for confiscating illicitly acquired assets, thereby overriding claims of ownership."
+        }
+      ],
+      "hint": "Consider how the Convention treats assets that have been purchased using illicitly obtained money."
+    }
+  ]
+}
+

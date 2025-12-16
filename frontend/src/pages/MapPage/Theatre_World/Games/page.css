@@ -1,0 +1,60 @@
+/* Theatre character container for Games page */
+.it-character-container {
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    width: 55%;
+    height: 65%;
+    overflow: hidden;
+    background: transparent;
+    z-index: 6;
+    pointer-events: none;
+    transform-origin: bottom left;
+}
+
+/* Animation only on difficulty selection page */
+.it-character-container.selection-mode {
+    animation: it-character-enter 1.2s ease-out forwards;
+}
+
+@keyframes it-character-enter {
+    0% {
+        transform: translate(-120vw, 40vh) scale(0.05);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hide browser extension overlays */
+.it-character-container>*:not(video) {
+    display: none !important;
+}
+
+.it-character-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background: transparent;
+}
+
+/* Hide all video controls */
+.it-character-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.it-character-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.it-character-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.it-character-video::-moz-media-controls {
+    display: none !important;
+}
+

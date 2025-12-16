@@ -1,0 +1,516 @@
+/* Header Component Styles - Vintage Parchment Style */
+.main-header {
+    background: linear-gradient(to bottom,
+            #c4956a 0%,
+            #d4a574 50%,
+            #c4956a 100%);
+    border-bottom: 4px solid #5C3D1E;
+    box-shadow:
+        inset 0 -2px 4px rgba(0, 0, 0, 0.1),
+        0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Subtle texture on header */
+.main-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(145deg, #f5e6c8 0%, #e8d4a8 100%);
+    border: 3px solid #5C4033;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.3),
+        2px 3px 0 0 #4A3520;
+    color: #5C4033;
+    transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: rotate(-10deg) scale(1.05);
+}
+
+.header-logo svg {
+    width: 100%;
+    height: 100%;
+    stroke: #5C4033;
+}
+
+.header-title h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5C3D1E;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.header-tagline {
+    font-size: 0.75rem;
+    color: #8B5A2B;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Header Center - Game Stats */
+.header-center {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(to bottom, #f5e6c8 0%, #e8d4a8 100%);
+    border: 2px solid #5C4033;
+    border-radius: 10px;
+    padding: 0.4rem 0.75rem;
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.3),
+        2px 2px 0 0 #4A3520;
+}
+
+/* Level Display */
+.level-display {
+    padding: 0.3rem 0.75rem;
+}
+
+.level-badge {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #D4A84B 0%, #B8941F 100%);
+    border: 3px solid #8B5A2B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.4),
+        0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.level-number {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #5C3D1E;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.level-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.level-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #5C3D1E;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.xp-bar {
+    width: 80px;
+    height: 8px;
+    background: #c4a67a;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.xp-fill {
+    height: 100%;
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.5);
+}
+
+.xp-text {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #8B5A2B;
+}
+
+/* City Health Display */
+.health-display {
+    padding: 0.3rem 0.75rem;
+}
+
+.health-icon {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #ff7675 0%, #d63031 100%);
+    border: 3px solid #b71540;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.4),
+        0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.health-icon svg {
+    width: 20px;
+    height: 20px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+    fill: white;
+    stroke: white;
+}
+
+.health-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.health-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #5C3D1E;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.health-bar {
+    width: 80px;
+    height: 8px;
+    background: #c4a67a;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.health-fill {
+    height: 100%;
+    background: linear-gradient(to right, #00b894, #55efc4);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 6px rgba(85, 239, 196, 0.5);
+}
+
+.health-text {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #8B5A2B;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Coins Display */
+.coins-display {
+    background: linear-gradient(to bottom, #fff8dc 0%, #f5e6c8 100%);
+}
+
+.coin-icon {
+    width: 28px;
+    height: 28px;
+    animation: coinBounce 2s ease-in-out infinite;
+}
+
+.coin-icon svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes coinBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+.coin-count {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #8B6914;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Badges Display */
+.badges-display {
+    padding: 0.3rem 0.6rem;
+}
+
+.badges-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: linear-gradient(to bottom, #fdf5e6 0%, #f5e6c8 100%);
+    border: 1px solid #8B5A2B;
+    border-radius: 12px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.badge-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(139, 90, 43, 0.3);
+}
+
+.badge-item svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.badge-name {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #5C3D1E;
+    white-space: nowrap;
+}
+
+.badge-more {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #8B5A2B 0%, #6B4423 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Map Button Styles */
+.map-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to bottom, #f5e6c8 0%, #e8d4a8 100%);
+    border: 3px solid #5C4033;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #5C3D1E;
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.3),
+        2px 3px 0 0 #4A3520;
+    transition: all 0.2s ease;
+}
+
+.map-button svg {
+    width: 20px;
+    height: 20px;
+    stroke: #5C4033;
+}
+
+.map-button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to bottom, #fff8e8 0%, #f5e6c8 100%);
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.4),
+        3px 4px 0 0 #4A3520;
+}
+
+.map-button:active {
+    transform: translateY(1px);
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.1),
+        1px 1px 0 0 #4A3520;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.welcome-text {
+    display: block;
+    font-size: 0.7rem;
+    color: rgba(92, 61, 30, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.user-name {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5C3D1E;
+    text-shadow: none;
+}
+
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #D4A84B 0%, #C49A3B 100%);
+    border: 3px solid #5C4033;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #5C3D1E;
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.3),
+        2px 3px 0 0 #4A3520;
+    transition: transform 0.3s ease;
+}
+
+.user-avatar:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .header-center {
+        gap: 1rem;
+    }
+
+    .badge-name {
+        display: none;
+    }
+
+    .xp-bar {
+        width: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header-center {
+        gap: 0.75rem;
+    }
+
+    .stat-item {
+        padding: 0.3rem 0.5rem;
+    }
+
+    .level-info,
+    .health-info {
+        display: none;
+    }
+
+    .badges-display {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        padding: 0.5rem 1rem;
+    }
+
+    .header-logo {
+        width: 40px;
+        height: 40px;
+        padding: 6px;
+    }
+
+    .header-title h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-tagline {
+        font-size: 0.65rem;
+    }
+
+    .header-center {
+        gap: 0.5rem;
+    }
+
+    .level-display,
+    .health-display,
+    .badges-display {
+        display: none;
+    }
+
+    .coins-display {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .coin-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .coin-count {
+        font-size: 0.9rem;
+    }
+
+    .user-info {
+        display: none;
+    }
+
+    .user-avatar {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    .map-button span {
+        display: none;
+    }
+
+    .map-button {
+        padding: 0.5rem;
+    }
+}

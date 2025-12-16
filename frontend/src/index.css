@@ -1,0 +1,116 @@
+/* CSS Reset and Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Retro Cartoon Palette */
+  --color-primary: #FF4D4D;
+  /* Red */
+  --color-secondary: #FFD700;
+  /* Yellow */
+  --color-accent: #2D9CDB;
+  /* Blue */
+  --color-background: #99D9EA;
+  /* Light Blue Sky */
+  --color-surface: #FFFFFF;
+  /* White */
+  --color-text: #000000;
+  /* Black */
+
+  --border-thick: 3px solid #000000;
+  --shadow-hard: 4px 4px 0px 0px #000000;
+  --shadow-hard-lg: 8px 8px 0px 0px #000000;
+
+  /* Typography */
+  font-family: 'Fredoka', cursive, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  /* Rendering */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light;
+  /* Force light mode */
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-text);
+  /* Add a subtle pattern dot if we want, but solid is fine given the image */
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Smooth scrollbar - making it chunky */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-left: 3px solid #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Selection */
+::selection {
+  background: var(--color-secondary);
+  color: #000;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+/* Image defaults */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Button reset */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Link reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}

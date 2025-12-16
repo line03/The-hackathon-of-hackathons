@@ -1,0 +1,212 @@
+{
+  "quiz": [
+    {
+      "question": "What was the primary significance of the United Nations Security Council Resolution 2250, as described in the text?",
+      "answerOptions": [
+        {
+          "text": "It established the UNODC's YouthLED Integrity Advisory Board.",
+          "isCorrect": false,
+          "rationale": "The text mentions the UNODC's board led a discussion, but it does not state that Resolution 2250 was responsible for its creation."
+        },
+        {
+          "text": "It formally acknowledged the crucial role of young people in peacebuilding and conflict prevention.",
+          "isCorrect": true,
+          "rationale": "The article identifies this resolution as a 'pivotal moment' for recognizing the proactive involvement of youth in shaping lasting peace."
+        },
+        {
+          "text": "It mandated that all post-conflict recovery funds be managed by youth-led organizations.",
+          "isCorrect": false,
+          "rationale": "While the resolution promotes youth involvement, the text does not claim it made such a specific financial mandate."
+        },
+        {
+          "text": "It was the first document to identify corruption as the sole driver of conflict.",
+          "isCorrect": false,
+          "rationale": "The resolution focuses on the role of youth in peace and security; the article connects corruption to conflict, but doesn't attribute this specific point to the resolution."
+        }
+      ],
+      "hint": "Consider the resolution's impact on the narrative surrounding young people's involvement in peace processes."
+    },
+    {
+      "question": "According to the article, how does corruption directly impact the youth and potentially lead to conflict?",
+      "answerOptions": [
+        {
+          "text": "By limiting their educational and career opportunities, which creates widespread dissatisfaction.",
+          "isCorrect": true,
+          "rationale": "The text explicitly states that corruption 'sows the seeds of cynicism and limiting opportunities,' leading to dissatisfaction that can become a driver of conflict."
+        },
+        {
+          "text": "By forcing them to participate in corrupt practices to succeed.",
+          "isCorrect": false,
+          "rationale": "While this may happen, the article's main point is that corruption creates systemic inequality and dissatisfaction, rather than forcing individual participation."
+        },
+        {
+          "text": "By decreasing the quality of military training for young soldiers.",
+          "isCorrect": false,
+          "rationale": "The source material focuses on broader societal impacts like inequality and injustice, not on specific effects within military structures."
+        },
+        {
+          "text": "By making it illegal for anyone under 25 to run for political office.",
+          "isCorrect": false,
+          "rationale": "The text discusses youth being distanced from politics, but does not mention specific legal age restrictions as a consequence of corruption."
+        }
+      ],
+      "hint": "Think about how systemic issues affect personal and professional development and can lead to broader social unrest."
+    },
+    {
+      "question": "The text suggests that a dominant, negative point of view about youth has what specific consequence?",
+      "answerOptions": [
+        {
+          "text": "It leads to increased funding for youth-led peace initiatives.",
+          "isCorrect": false,
+          "rationale": "The article suggests this viewpoint has negative outcomes, whereas increased funding would be a positive one."
+        },
+        {
+          "text": "It distances them from political engagement and decision-making roles.",
+          "isCorrect": true,
+          "rationale": "The article states that portraying youth as 'disruptors of peace' reinforces the perception they are 'unsuited for politics,' leading to their exclusion."
+        },
+        {
+          "text": "It encourages them to seek education and careers in other countries.",
+          "isCorrect": false,
+          "rationale": "While this might be a personal choice for some, the text focuses on the impact on their domestic political and civic participation."
+        },
+        {
+          "text": "It results in educational reforms that foster more critical thinking.",
+          "isCorrect": false,
+          "rationale": "The article argues the opposite: that the educational system often fails to foster critical thinking and instead promotes conformity."
+        }
+      ],
+      "hint": "How does the perception of youth as 'disruptors' affect their inclusion in formal processes?"
+    },
+    {
+      "question": "What role does the educational system play in the challenges faced by youth, as outlined in the article?",
+      "answerOptions": [
+        {
+          "text": "It successfully teaches young people how to hold their governments accountable.",
+          "isCorrect": false,
+          "rationale": "The text identifies a 'need for more support for holding the government accountable' and suggests the educational system is deficient in this area."
+        },
+        {
+          "text": "It is the primary channel for youth to participate in decision-making.",
+          "isCorrect": false,
+          "rationale": "The article portrays the educational system as a source of challenges, not as a successful channel for political participation."
+        },
+        {
+          "text": "It often promotes conformity rather than encouraging critical and logical questioning.",
+          "isCorrect": true,
+          "rationale": "The text states that the educational system 'fails to foster critical and logical questioning and instead promotes the mentality of conformity.'"
+        },
+        {
+          "text": "It provides all the necessary data and information for anti-corruption campaigns.",
+          "isCorrect": false,
+          "rationale": "The article explicitly points out that a lack of accessible data and information is a major hindrance for youth-led campaigns."
+        }
+      ],
+      "hint": "The text critiques the mindset that the education system can sometimes encourage in students."
+    },
+    {
+      "question": "What is identified as a major obstacle for youth-led campaigns and actions aimed at combating corruption?",
+      "answerOptions": [
+        {
+          "text": "A lack of interest from other young people in getting involved.",
+          "isCorrect": false,
+          "rationale": "The text encourages youth to get involved and connect with like-minded networks, implying that interest exists but faces barriers."
+        },
+        {
+          "text": "The difficulty in accessing necessary data, information, and policies.",
+          "isCorrect": true,
+          "rationale": "The article clearly states that 'Data and information come as the major hindrance' and that necessary policies are 'often lacking and, even when present, are not accessible.'"
+        },
+        {
+          "text": "The refusal of international organizations like the UNODC to offer support.",
+          "isCorrect": false,
+          "rationale": "The article begins by highlighting a discussion led by the UNODC's YouthLED board, suggesting support rather than refusal from such bodies."
+        },
+        {
+          "text": "An over-reliance on traditional media instead of social media.",
+          "isCorrect": false,
+          "rationale": "The article does not discuss media strategies, focusing instead on more fundamental barriers like information access and fear of persecution."
+        }
+      ],
+      "hint": "This obstacle is related to the tools needed to prove wrongdoing and hold power to account."
+    },
+    {
+      "question": "Which of the following is NOT listed as a way young people can contribute to fighting corruption and building peace?",
+      "answerOptions": [
+        {
+          "text": "Acting as watchdogs and whistleblowers to hold governments accountable.",
+          "isCorrect": false,
+          "rationale": "This is explicitly mentioned as a key role for youth, who can 'call out every wrongdoing' and 'follow the resources.'"
+        },
+        {
+          "text": "Actively participating in decision-making processes to promote transparency.",
+          "isCorrect": false,
+          "rationale": "The text encourages this, stating their involvement 'becomes a catalyst for positive transformation' and ensures diverse perspectives."
+        },
+        {
+          "text": "Waiting for the conflict to end before planning any anti-corruption efforts.",
+          "isCorrect": true,
+          "rationale": "While tackling corruption during conflict is 'next to impossible,' the text stresses the importance of designing the post-conflict stage correctly, implying planning and involvement are crucial, not passive waiting."
+        },
+        {
+          "text": "Getting involved, connecting with like-minded networks, and building allies.",
+          "isCorrect": false,
+          "rationale": "This is the first suggestion under 'What Can Youth Do?', emphasizing that participation and collaboration are key."
+        }
+      ],
+      "hint": "The text recommends several proactive roles for youth; consider which option reflects inaction."
+    },
+    {
+      "question": "According to the text, what is the risk of improperly handling the post-conflict recovery and peace-building phase?",
+      "answerOptions": [
+        {
+          "text": "The United Nations will impose severe economic sanctions.",
+          "isCorrect": false,
+          "rationale": "The article discusses the consequences within the society itself, not potential actions by international bodies like the UN."
+        },
+        {
+          "text": "Losing an entire generation of youth and causing society to regress.",
+          "isCorrect": true,
+          "rationale": "The text directly warns of the 'risk of losing an entire generation of youth living in post-conflict scenarios, ultimately pushing society backward.'"
+        },
+        {
+          "text": "Neighboring countries will refuse to engage in trade or diplomacy.",
+          "isCorrect": false,
+          "rationale": "The focus of the article is on the internal societal impact rather than international relations."
+        },
+        {
+          "text": "It will become impossible to ever hold democratic elections again.",
+          "isCorrect": false,
+          "rationale": "While improper handling would certainly harm democratic institutions, the text highlights the specific, devastating impact on the youth generation as the critical risk."
+        }
+      ],
+      "hint": "The article warns of a severe, long-term consequence for the country's human capital and development."
+    },
+    {
+      "question": "What is the relationship between corruption and conflict as described in the article?",
+      "answerOptions": [
+        {
+          "text": "Corruption is only a problem in the post-conflict stage, not before.",
+          "isCorrect": false,
+          "rationale": "The text states that corruption is a 'driver of conflict,' meaning it is a significant problem before and during the conflict."
+        },
+        {
+          "text": "Conflict completely eliminates all forms of government corruption.",
+          "isCorrect": false,
+          "rationale": "The article implies the opposite, stating that tackling corruption during conflict is nearly impossible and that it complicates the rebuilding process."
+        },
+        {
+          "text": "Corruption can be a driver of conflict by creating instability, inequality, and injustice.",
+          "isCorrect": true,
+          "rationale": "This is a central theme of the article, which explains that corruption leads to a 'cascade of negative consequences' that can fuel conflict."
+        },
+        {
+          "text": "Conflict and corruption are described as two completely unrelated issues.",
+          "isCorrect": false,
+          "rationale": "The entire premise of the article is to shed light on the 'interlinkages' between corruption, youth, peace, and security."
+        }
+      ],
+      "hint": "Consider how feelings of injustice and inequality, fueled by a specific issue, can lead to widespread unrest."
+    }
+  ]
+}

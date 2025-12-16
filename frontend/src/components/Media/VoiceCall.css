@@ -1,0 +1,531 @@
+/* ===========================================
+   AI Tutor Voice Call - Conversational UI
+   Modern, immersive design for ages 15-30
+   =========================================== */
+
+/* Import modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ============ Main Container ============ */
+.voice-tutor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Blurred map background */
+.voice-tutor-container::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    /* Extend beyond edges to hide blur artifacts */
+    background: url('/background.png') center center / cover no-repeat;
+    filter: blur(8px);
+    z-index: 0;
+}
+
+/* Dark warm overlay to ensure text legibility */
+.voice-tutor-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(46, 30, 20, 0.5) 0%, rgba(60, 40, 30, 0.5) 50%, rgba(40, 25, 20, 0.5) 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ============ Session Start Screen ============ */
+.session-start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    z-index: 1;
+    text-align: center;
+}
+
+.tutor-preview {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+    position: relative;
+}
+
+.tutor-preview video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tutor-preview::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+.session-start-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #FDF5E6 0%, #D4A84B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.session-start-content p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0.5rem 0 0;
+    max-width: 300px;
+}
+
+/* ============ Primary Button ============ */
+.btn-start-session {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: #ffffff;
+    background: linear-gradient(135deg, #8B5A2B 0%, #6B4423 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 30px rgba(139, 90, 43, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.btn-start-session:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(139, 90, 43, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+}
+
+.btn-start-session:active {
+    transform: translateY(-1px);
+}
+
+.btn-start-session .icon {
+    font-size: 1.3rem;
+}
+
+/* ============ Active Session Layout ============ */
+.session-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+}
+
+/* ============ Tutor Video Area ============ */
+.tutor-video-container {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+    transition: all 0.4s ease;
+}
+
+.tutor-video-container.speaking {
+    border-color: rgba(212, 168, 75, 0.6);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5),
+        0 0 60px rgba(212, 168, 75, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.tutor-video-container.listening {
+    border-color: rgba(239, 68, 68, 0.6);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5),
+        0 0 60px rgba(239, 68, 68, 0.2),
+        0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+}
+
+.tutor-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: transparent;
+}
+
+/* Remove video controls */
+.tutor-video::-webkit-media-controls,
+.tutor-video::-webkit-media-controls-enclosure,
+.tutor-video::-webkit-media-controls-panel,
+.tutor-video::-moz-media-controls {
+    display: none !important;
+}
+
+/* ============ Thinking Bubble ============ */
+.thinking-bubble {
+    position: absolute;
+    top: 10%;
+    right: -20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0.6rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.thinking-bubble .dot {
+    width: 8px;
+    height: 8px;
+    background: #8B5A2B;
+    border-radius: 50%;
+    animation: thinkingPulse 1.4s ease-in-out infinite;
+}
+
+.thinking-bubble .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.thinking-bubble .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes thinkingPulse {
+
+    0%,
+    60%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    30% {
+        transform: translateY(-8px);
+        opacity: 1;
+    }
+}
+
+/* ============ Speech Bubble ============ */
+.speech-bubble {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 1.25rem 1.75rem;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgba(255, 255, 255, 0.1);
+}
+
+.speech-bubble p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.speech-bubble.error p {
+    color: #fca5a5;
+}
+
+/* ============ Status Indicator ============ */
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #6ee7b7;
+    animation: statusPulse 2s ease-in-out infinite;
+}
+
+.status-indicator.listening .status-dot {
+    background: #ef4444;
+    animation: listeningPulse 0.8s ease-in-out infinite;
+}
+
+.status-indicator.thinking .status-dot {
+    background: #D4A84B;
+    animation: thinkingDot 1s ease-in-out infinite;
+}
+
+.status-indicator.speaking .status-dot {
+    background: #8B5A2B;
+    animation: speakingPulse 0.6s ease-in-out infinite;
+}
+
+@keyframes statusPulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes listeningPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
+
+@keyframes thinkingDot {
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes speakingPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+}
+
+/* ============ Microphone Button ============ */
+.mic-button-container {
+    margin-top: 1rem;
+}
+
+.mic-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, #8B5A2B 0%, #6B4423 100%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 40px rgba(139, 90, 43, 0.4),
+        0 0 0 4px rgba(139, 90, 43, 0.2);
+    position: relative;
+}
+
+.mic-button:hover:not(:disabled) {
+    transform: scale(1.05);
+    box-shadow: 0 15px 50px rgba(139, 90, 43, 0.5),
+        0 0 0 6px rgba(139, 90, 43, 0.25);
+}
+
+.mic-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.mic-button.recording {
+    background: linear-gradient(135deg, #ef4444 0%, #f87171 100%);
+    box-shadow: 0 10px 40px rgba(239, 68, 68, 0.4),
+        0 0 0 4px rgba(239, 68, 68, 0.2);
+    animation: recordingPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes recordingPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 10px 40px rgba(239, 68, 68, 0.4), 0 0 0 4px rgba(239, 68, 68, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 10px 50px rgba(239, 68, 68, 0.6), 0 0 0 8px rgba(239, 68, 68, 0.15);
+    }
+}
+
+/* Sound wave animation rings */
+.mic-button.recording::before,
+.mic-button.recording::after {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border-radius: 50%;
+    border: 2px solid rgba(239, 68, 68, 0.4);
+    animation: soundWave 1.5s ease-out infinite;
+}
+
+.mic-button.recording::after {
+    animation-delay: 0.5s;
+}
+
+@keyframes soundWave {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+.mic-hint {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+/* ============ End Session Button ============ */
+.btn-end-session {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-end-session:hover {
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ============ Error Toast ============ */
+.error-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(239, 68, 68, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    color: white;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.4s ease;
+    z-index: 100;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateX(-50%) translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+.error-toast button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.error-toast button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 600px) {
+    .voice-tutor-container {
+        padding: 1.5rem;
+    }
+
+    .tutor-video-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .tutor-preview {
+        width: 160px;
+        height: 160px;
+    }
+
+    .session-start-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .speech-bubble {
+        padding: 1rem 1.25rem;
+    }
+
+    .speech-bubble p {
+        font-size: 1rem;
+    }
+}
