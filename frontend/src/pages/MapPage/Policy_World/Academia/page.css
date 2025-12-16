@@ -1,0 +1,737 @@
+/* Academia Page Styles */
+
+/* Policy Character Container - Left side */
+.academia-character-container {
+    position: absolute;
+    bottom: 0%;
+    left: -5%;
+    width: 40%;
+    height: 90%;
+    overflow: hidden;
+    background: transparent;
+    z-index: 6;
+    pointer-events: none;
+    transform-origin: bottom left;
+    animation: academia-character-enter 1.2s ease-out forwards;
+}
+
+@keyframes academia-character-enter {
+    0% {
+        transform: translate(-120vw, 0) scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}
+
+.academia-character-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background: transparent;
+}
+
+/* Hide video controls */
+.academia-character-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.academia-character-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.academia-character-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+/* Selection Container - Right side */
+.academia-selection-container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    left: auto;
+    transform: translateY(-50%);
+    width: 68%;
+    max-width: 950px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 1.75rem 2rem;
+    box-shadow: 6px 6px 0 #000;
+    z-index: 10;
+    animation: academia-slide-in 0.8s ease-out forwards;
+}
+
+/* Override carousel arrows for academia */
+.academia-selection-container .carousel-arrow {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    font-size: 1.6rem;
+    flex-shrink: 0;
+}
+
+@keyframes academia-slide-in {
+    0% {
+        transform: translateY(-50%) translateX(100vw);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-50%) translateX(0);
+        opacity: 1;
+    }
+}
+
+.academia-title {
+    font-family: 'Staatliches', 'Impact', sans-serif;
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.academia-description {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0 0 1.25rem 0;
+    text-align: center;
+}
+
+/* Carousel container override for academia */
+.academia-selection-container .carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+
+/* Carousel track for 3 visible modules */
+.carousel-track.three-visible {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Academia Card - Compact for 3-up display */
+.academia-card {
+    background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #000;
+    border-radius: 14px;
+    padding: 1.25rem;
+    height: 250px;
+    flex: 1;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.academia-card.locked {
+    background: linear-gradient(145deg, #e9ecef 0%, #dee2e6 100%);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.academia-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+.module-number {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6c757d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.locked-badge {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    background: #ffc107;
+    border-radius: 8px;
+    color: #000;
+}
+
+.available-badge {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
+    background: #28a745;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.module-title {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.25;
+}
+
+.module-description {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.45;
+    margin: 0 0 1rem 0;
+    flex-grow: 1;
+}
+
+.start-module-btn {
+    align-self: flex-start;
+    padding: 0.5rem 1rem;
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000;
+    background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+    border: 2px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #000;
+    transition: all 0.2s ease;
+}
+
+.start-module-btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 #000;
+}
+
+.start-module-btn:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 #000;
+}
+
+/* Carousel indicators for pagination */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.carousel-indicator:hover {
+    background: #e9ecef;
+}
+
+.carousel-indicator.active {
+    background: #FFD700;
+}
+
+/* Carousel dots - unavailable state (legacy) */
+.carousel-dot.unavailable {
+    background: #adb5bd;
+}
+
+.carousel-dot.unavailable.active {
+    background: #6c757d;
+}
+
+/* Module Progress */
+.module-progress {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.progress-text {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Video wrapper for module pages */
+.academia-video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 20;
+}
+
+.academia-video {
+    width: 85%;
+    height: 85%;
+    max-width: 1100px;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.academia-video-controls {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    gap: 1rem;
+    z-index: 25;
+}
+
+.academia-continue-btn,
+.academia-skip-btn {
+    padding: 0.8rem 1.5rem;
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.academia-continue-btn {
+    color: #000;
+    background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0 #000;
+}
+
+.academia-continue-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 #000;
+}
+
+.academia-skip-btn {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #fff;
+}
+
+.academia-skip-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Reflection Phase Styles */
+.reflection-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 8px 8px 0 #000;
+    z-index: 15;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.reflection-title {
+    font-family: 'Staatliches', 'Impact', sans-serif;
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.reflection-question {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1.05rem;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 1.5rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-left: 4px solid #FFD700;
+    border-radius: 0 8px 8px 0;
+}
+
+.reflection-textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    border: 2px solid #dee2e6;
+    border-radius: 12px;
+    resize: vertical;
+    transition: border-color 0.2s ease;
+}
+
+.reflection-textarea:focus {
+    outline: none;
+    border-color: #FFD700;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+}
+
+.reflection-textarea::placeholder {
+    color: #adb5bd;
+}
+
+.reflection-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.reflection-submit-btn {
+    padding: 0.8rem 2rem;
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #000;
+    transition: all 0.2s ease;
+}
+
+.reflection-submit-btn:hover:not(:disabled) {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #000;
+}
+
+.reflection-submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Feedback Display Styles */
+.feedback-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 750px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 8px 8px 0 #000;
+    z-index: 15;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.feedback-title {
+    font-family: 'Staatliches', 'Impact', sans-serif;
+    font-size: 1.6rem;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.feedback-score {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #28a745;
+    background: #e8f5e9;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+}
+
+.feedback-section {
+    margin-bottom: 1.5rem;
+}
+
+.feedback-section-title {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0 0 0.75rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.feedback-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feedback-list li {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.feedback-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.feedback-list.strengths li::before {
+    content: '✓';
+    color: #28a745;
+}
+
+.feedback-list.missing li::before {
+    content: '!';
+    color: #dc3545;
+}
+
+.feedback-text {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.improved-sentence {
+    background: #fff3cd;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #FFD700;
+    font-style: italic;
+}
+
+.feedback-continue-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+    border: 2px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #000;
+    transition: all 0.2s ease;
+}
+
+.feedback-continue-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #000;
+}
+
+/* YouTube Phase Styles */
+.youtube-phase-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 8px 8px 0 #000;
+    z-index: 15;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.youtube-phase-title {
+    font-family: 'Staatliches', 'Impact', sans-serif;
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.youtube-phase-description {
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+}
+
+.youtube-video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0 #000;
+    margin-bottom: 1.5rem;
+}
+
+.youtube-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.youtube-continue-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Lexend', 'Segoe UI', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
+    border: 2px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #000;
+    transition: all 0.2s ease;
+}
+
+.youtube-continue-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .academia-selection-container {
+        width: 70%;
+        right: 2%;
+    }
+
+    .academia-card {
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .academia-character-container {
+        width: 20%;
+        height: 50%;
+        left: 1%;
+    }
+
+    .academia-selection-container {
+        width: 75%;
+        right: 2%;
+        padding: 1.5rem 1.25rem;
+    }
+
+    .academia-card {
+        max-width: 200px;
+        padding: 1rem;
+        min-height: 180px;
+    }
+
+    .module-title {
+        font-size: 0.95rem;
+    }
+
+    .module-description {
+        font-size: 0.8rem;
+    }
+
+    .academia-selection-container .carousel-arrow {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .academia-character-container {
+        display: none;
+    }
+
+    .academia-selection-container {
+        width: 92%;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 850px;
+        padding: 1.75rem;
+    }
+
+    .academia-card {
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 768px) {
+    .academia-selection-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 1rem auto;
+        width: 95%;
+        max-width: none;
+        animation: none;
+    }
+
+    .academia-selection-container .carousel-container {
+        flex-direction: column;
+    }
+
+    .carousel-track.three-visible {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .academia-card {
+        max-width: none;
+        width: 100%;
+    }
+
+    .academia-selection-container .carousel-arrow {
+        display: none;
+    }
+
+    .reflection-container,
+    .feedback-container {
+        width: 95%;
+        padding: 1.5rem;
+        max-height: 90vh;
+    }
+}
+

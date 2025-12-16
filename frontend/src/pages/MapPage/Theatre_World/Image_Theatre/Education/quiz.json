@@ -1,0 +1,134 @@
+{
+  "quiz": [
+    {
+      "question": "Which scenario best illustrates a long-term social consequence of corruption within an education system?",
+      "answerOptions": [
+        {
+          "text": "A delayed construction project for a new school library by several months.",
+          "rationale": "This represents a direct, negative outcome of corruption, but it focuses on an immediate, logistical problem rather than a broader, generational societal impact.",
+          "isCorrect": false
+        },
+        {
+          "text": "A system where access to well-funded schools and qualified teachers is consistently determined by bribery, widening the gap between socioeconomic classes over generations.",
+          "rationale": "This reflects the idea that corruption in education can perpetuate cycles of poverty and inequality, which is a significant, long-term social effect.",
+          "isCorrect": true
+        },
+        {
+          "text": "A single instance of an administrator embezzling funds intended for classroom supplies.",
+          "rationale": "While this is a clear act of corruption that harms students, it describes an individual event rather than a systemic issue that reshapes society over time.",
+          "isCorrect": false
+        },
+        {
+          "text": "The implementation of a mandatory ethics course for all public school teachers.",
+          "rationale": "This is a measure to combat corruption, not a negative consequence of it.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about how corruption's effects can extend beyond the classroom and influence the very structure of a society."
+    },
+    {
+      "question": "Why is a multifaceted approach, involving formal, non-formal, and informal learning, essential for effective anti-corruption education?",
+      "answerOptions": [
+        {
+          "text": "Because it is the only way to secure funding from diverse international bodies like the United Nations.",
+          "rationale": "While organizations may support multifaceted approaches, the primary need for one is based on how people learn, not on funding requirements.",
+          "isCorrect": false
+        },
+        {
+          "text": "Because values related to integrity are shaped not only in classrooms but also through family, community, and peer interactions.",
+          "rationale": "This recognizes that education is holistic, and anti-corruption messages must be consistent across the different environments where an individual learns and develops.",
+          "isCorrect": true
+        },
+        {
+          "text": "Because formal school systems have proven entirely ineffective at teaching subjects related to ethics.",
+          "rationale": "The source material advocates for strengthening ethics in formal education, not abandoning it as ineffective; other learning methods are seen as complementary.",
+          "isCorrect": false
+        },
+        {
+          "text": "Because teachers in formal settings are often the primary source of corruption and cannot be trusted to teach about it.",
+          "rationale": "While hiring unqualified teachers is a form of corruption, this statement makes a generalization that is not supported and overlooks the systemic nature of the problem.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider the different settings where a person's character and values are developed throughout their life."
+    },
+    {
+      "question": "Which of the following actions best aligns with the principle of strengthening accountability to safeguard education from corruption?",
+      "answerOptions": [
+        {
+          "text": "Creating a series of animated videos for young children about the importance of telling the truth.",
+          "rationale": "This action relates to educating youth, which is a valuable tool, but it doesn't directly address the systemic accountability of how the education system is managed.",
+          "isCorrect": false
+        },
+        {
+          "text": "Establishing a publicly accessible database that tracks the allocation and expenditure of education funds from the national to the local school level.",
+          "rationale": "This measure directly increases transparency and allows for the monitoring of finances, which are core components of accountability.",
+          "isCorrect": true
+        },
+        {
+          "text": "Organizing an annual conference for education professionals to share best practices in teaching ethics.",
+          "rationale": "This is a form of capacity development, but it does not create a mechanism for holding the education system itself accountable for its use of resources and power.",
+          "isCorrect": false
+        },
+        {
+          "text": "Offering higher salaries to teachers to reduce their incentive to accept bribes.",
+          "rationale": "While this might address one potential motive for corruption, it is an incentive-based approach and does not build the structural mechanisms of transparency and monitoring that define accountability.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Focus on measures that would make the operations and financing of the education system visible and open to scrutiny."
+    },
+    {
+      "question": "Beyond simply informing people about its dangers, how does quality education serve as a fundamental tool to tackle corruption?",
+      "answerOptions": [
+        {
+          "text": "By ensuring that every graduate automatically becomes an ethical and incorruptible leader.",
+          "rationale": "Education can equip people with skills and values, but it cannot guarantee the future actions of any individual.",
+          "isCorrect": false
+        },
+        {
+          "text": "By replacing the need for law enforcement and judicial systems in prosecuting corruption cases.",
+          "rationale": "Education complements legal and institutional frameworks by creating a culture of integrity, but it does not replace the function of law enforcement.",
+          "isCorrect": false
+        },
+        {
+          "text": "By addressing underlying causes such as poverty and equipping future citizens with the skills to advocate for integrity.",
+          "rationale": "This captures the dual role of education in both mitigating the conditions that foster corruption and actively building the capacity of people to fight against it.",
+          "isCorrect": true
+        },
+        {
+          "text": "By focusing exclusively on professional training for anti-corruption officers and investigators.",
+          "rationale": "While training professionals is important, the text emphasizes a broader approach that includes educating all young people from an early age to create a widespread culture of integrity.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider education's role in both preventing the problem at its source and empowering people to be part of the solution."
+    },
+    {
+      "question": "What is the primary goal of introducing concepts like \"edutainment\" into anti-corruption initiatives?",
+      "answerOptions": [
+        {
+          "text": "To make the subject of corruption seem less serious and more approachable.",
+          "rationale": "The goal is to increase engagement through innovative methods, not to diminish the seriousness of the phenomenon.",
+          "isCorrect": false
+        },
+        {
+          "text": "To reduce the costs associated with creating traditional anti-corruption training materials.",
+          "rationale": "The source material discusses the benefits of this approach for engagement, not its potential cost-effectiveness.",
+          "isCorrect": false
+        },
+        {
+          "text": "To provide more avenues for youth and community engagement in designing solutions.",
+          "rationale": "This aligns with the text's explanation that edutainment opens up more ways for people to get involved in discussions and interventions.",
+          "isCorrect": true
+        },
+        {
+          "text": "To replace all classroom-based lectures with more modern, technology-driven lessons.",
+          "rationale": "This method is presented as a complementary strategy to innovate learning, not as a total replacement for other educational formats.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about how the method of delivering a message can affect how the audience interacts with the topic."
+    }
+  ]
+}

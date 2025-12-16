@@ -1,0 +1,160 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary objective of Forum Theatre as described in the guide?",
+      "answerOptions": [
+        {
+          "text": "To train students to become professional actors for careers in entertainment.",
+          "rationale": "The guide states that Forum Theatre does not require specific theatre training and is accessible to communities with different levels of education.",
+          "isCorrect": false
+        },
+        {
+          "text": "To present a single, correct solution to a social problem as determined by the facilitator.",
+          "rationale": "Forum Theatre is described as a non-judgemental process where the facilitator helps the community find its own solutions, rather than proposing one.",
+          "isCorrect": false
+        },
+        {
+          "text": "To provide a safe space for actors and audiences to collaboratively explore and find solutions to social issues.",
+          "rationale": "The foreword describes Forum Theatre as an opportunity for both actors and audiences to listen, debate and seek solutions to social issues in a safe, non-judgemental environment.",
+          "isCorrect": true
+        },
+        {
+          "text": "To entertain the community with a perfectly scripted and rehearsed performance.",
+          "rationale": "The process involves improvisation and audience intervention, which is different from a fixed, scripted performance focused solely on entertainment.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider the role of the audience and the goal of addressing issues like the rule of law."
+    },
+    {
+      "question": "In the context of Forum Theatre, what are audience members called?",
+      "answerOptions": [
+        {
+          "text": "Spectators",
+          "rationale": "While they do watch the play, this term doesn't capture their active and participatory role in the performance.",
+          "isCorrect": false
+        },
+        {
+          "text": "Critics",
+          "rationale": "Their role is not to judge the performance but to actively participate in finding solutions to the problems presented.",
+          "isCorrect": false
+        },
+        {
+          "text": "Participants",
+          "rationale": "This term is generally correct but doesn't use the specific, combined term that the guide introduces for the audience.",
+          "isCorrect": false
+        },
+        {
+          "text": "Spect-actors",
+          "rationale": "This term combines 'spectator' and 'actor' to reflect the audience's dual role of watching and having the ability to act on stage.",
+          "isCorrect": true
+        }
+      ],
+      "hint": "The special term for the audience reflects their ability to both watch and participate on stage."
+    },
+    {
+      "question": "According to the guide, where do the stories for Forum Theatre plays originate?",
+      "answerOptions": [
+        {
+          "text": "From famous historical events or classic literature.",
+          "rationale": "This is a common source for traditional theatre, but Forum Theatre focuses on the direct experiences of the participants.",
+          "isCorrect": false
+        },
+        {
+          "text": "From scripts written by professional playwrights who are experts on the subject.",
+          "rationale": "The guide emphasizes that the process is autobiographical and does not impose a script written by an external author.",
+          "isCorrect": false
+        },
+        {
+          "text": "From the real-life situations and autobiographical stories experienced by the students.",
+          "rationale": "The guide states that Forum Theatre constructs a plot based on real-life situations experienced by students, assuming they are the experts on their lives.",
+          "isCorrect": true
+        },
+        {
+          "text": "From hypothetical scenarios created by the facilitator to teach a specific lesson.",
+          "rationale": "The facilitator's role is to guide the process, not to create the story content, which comes directly from the participants.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about why the guide describes this theatrical form as 'autobiographical'."
+    },
+    {
+      "question": "What does the 'maieutic' attitude of a Forum Theatre facilitator refer to?",
+      "answerOptions": [
+        {
+          "text": "Directing the play and telling the actors exactly how to perform their roles.",
+          "rationale": "This describes a traditional director, whereas a facilitator's role is less about artistic direction and more about guiding dialogue.",
+          "isCorrect": false
+        },
+        {
+          "text": "Acting as a 'midwife' to help the community give birth to its own solutions.",
+          "rationale": "The guide compares the facilitator to Socrates, who helps others find their own answers rather than providing them directly.",
+          "isCorrect": true
+        },
+        {
+          "text": "Judging the audience's suggestions and selecting only the best one to be performed.",
+          "rationale": "The facilitator's role is described as non-judgemental, ensuring every idea can be tested on stage.",
+          "isCorrect": false
+        },
+        {
+          "text": "Performing the lead role in the play to demonstrate the correct course of action.",
+          "rationale": "The facilitator is a guide for the process and does not act in the play or offer a single 'correct' solution.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The term is compared to the art of a 'midwife' and the methods of the philosopher Socrates."
+    },
+    {
+      "question": "What is a key feature of a Forum Theatre performance that distinguishes it from traditional theatre?",
+      "answerOptions": [
+        {
+          "text": "The play is performed, and then the audience is invited to intervene and change the story.",
+          "rationale": "This interactive element, where the play is stopped and re-enacted with audience participation, is central to the Forum Theatre process.",
+          "isCorrect": true
+        },
+        {
+          "text": "The actors wear elaborate costumes and use complex stage sets.",
+          "rationale": "While aesthetic elements can be used, the focus is on the story and dialogue, not necessarily on high production value.",
+          "isCorrect": false
+        },
+        {
+          "text": "The story always has a happy ending where the protagonist succeeds.",
+          "rationale": "The initial performance must end with the oppressed character being defeated to create a problem for the audience to solve.",
+          "isCorrect": false
+        },
+        {
+          "text": "The entire performance is improvised without any prior rehearsal.",
+          "rationale": "The guide describes a process of developing, building, and rehearsing the play before it is presented to an audience.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider how the performance structure allows for collaborative problem-solving."
+    },
+    {
+      "question": "Why is Forum Theatre considered an accessible and inclusive tool?",
+      "answerOptions": [
+        {
+          "text": "It requires expensive equipment and a professional theatre space.",
+          "rationale": "The method is designed to be used in various settings, including schools and communities, without needing extensive resources.",
+          "isCorrect": false
+        },
+        {
+          "text": "Only participants with years of acting experience are allowed to perform.",
+          "rationale": "The guide specifically notes that no previous theatre training is required, making it open to everyone.",
+          "isCorrect": false
+        },
+        {
+          "text": "It is based on non-competitive games and skills that everyone uses daily.",
+          "rationale": "This approach ensures that people from different ages and educational backgrounds can participate fully and equally.",
+          "isCorrect": true
+        },
+        {
+          "text": "The stories are always complex intellectual puzzles that require advanced education.",
+          "rationale": "The guide states that the process is experiential rather than intellectual, focusing on real-life, concrete situations.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about the level of prior skill or experience needed for someone to participate."
+    }
+  ]
+}

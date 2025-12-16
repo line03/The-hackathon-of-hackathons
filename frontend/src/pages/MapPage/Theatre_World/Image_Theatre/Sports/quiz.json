@@ -1,0 +1,264 @@
+{
+  "quiz": [
+    {
+      "question": "What is the most fundamental threat that corruption poses to the very concept of sports?",
+      "answerOptions": [
+        {
+          "text": "It leads to a decrease in the monetary value of television broadcasting rights.",
+          "rationale": "While a potential financial consequence, this does not address the core, existential threat to the nature of sport itself.",
+          "isCorrect": false
+        },
+        {
+          "text": "It undermines the core principles of fairness, competition, and integrity.",
+          "rationale": "This addresses the central idea that corruption attacks the essence of what makes a sport a sport, as suggested by the notion that 'sports will not be sports anymore'.",
+          "isCorrect": true
+        },
+        {
+          "text": "It forces governments to invest more money in regulatory bodies.",
+          "rationale": "This is a procedural outcome and a financial burden, but not the primary threat to the foundational values of athletic contests.",
+          "isCorrect": false
+        },
+        {
+          "text": "It results in fewer sporting events being hosted in developing countries.",
+          "rationale": "This might be a side effect of issues like procurement corruption, but it is not the most fundamental threat to the spirit of sport.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider what is lost when the outcome of a competition is no longer determined by skill and effort."
+    },
+    {
+      "question": "What factor significantly complicates global efforts to combat competition manipulation linked to betting?",
+      "answerOptions": [
+        {
+          "text": "The prevalence of online betting sites in jurisdictions with minimal regulation.",
+          "rationale": "The text identifies that criminals exploit legal loopholes by operating from countries with weak rules, making enforcement difficult.",
+          "isCorrect": true
+        },
+        {
+          "text": "A universal refusal by professional athletes to cooperate with investigations.",
+          "rationale": "While some individuals may not cooperate, the text does not suggest this is a universal or primary obstacle.",
+          "isCorrect": false
+        },
+        {
+          "text": "The technological inability to track any online financial transactions.",
+          "rationale": "While tracking can be complex, the core issue highlighted is the lack of legal authority in certain regions, not a complete failure of technology.",
+          "isCorrect": false
+        },
+        {
+          "text": "The refusal of international sports organizations to acknowledge the problem.",
+          "rationale": "The source material indicates that organizations like the IOC are actively working to combat this issue, not ignoring it.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think about where criminals would choose to operate their businesses to avoid legal consequences."
+    },
+    {
+      "question": "According to the principles discussed, what makes an anti-corruption code of conduct truly effective for a major sporting event?",
+      "answerOptions": [
+        {
+          "text": "It should be flexible and open to broad interpretation to cover new situations.",
+          "rationale": "The text suggests the opposite, arguing that ambiguity can be a weakness in anti-corruption measures.",
+          "isCorrect": false
+        },
+        {
+          "text": "It must be kept confidential to prevent criminals from finding loopholes.",
+          "rationale": "This contradicts the emphasis on transparency and the inclusion of stakeholders like civil society.",
+          "isCorrect": false
+        },
+        {
+          "text": "It needs to be drafted exclusively by former professional athletes.",
+          "rationale": "While athlete input is valuable, the text emphasizes academic and practitioner collaboration for compliance, not exclusive authorship by athletes.",
+          "isCorrect": false
+        },
+        {
+          "text": "It must be clear, specific, and backed by enforceable sanctions.",
+          "rationale": "The text explicitly states that for these instruments to succeed, they must be clear, specific, and enforceable, with mechanisms for oversight.",
+          "isCorrect": true
+        }
+      ],
+      "hint": "Consider what makes any rule or law practical and respected, rather than just a suggestion."
+    },
+    {
+      "question": "Which of the following best reflects the United Nations' overarching perspective on the role of sports in society?",
+      "answerOptions": [
+        {
+          "text": "A purely private enterprise that should be free from all government influence.",
+          "rationale": "The text shows deep involvement from inter-governmental bodies like the UN, which contradicts this idea.",
+          "isCorrect": false
+        },
+        {
+          "text": "An inherently corrupt sector that primarily requires law enforcement oversight.",
+          "rationale": "While acknowledging corruption, the UN's primary view is on the positive potential of sports, not its inherent flaws.",
+          "isCorrect": false
+        },
+        {
+          "text": "A powerful tool for promoting positive societal goals like peace, development, and education.",
+          "rationale": "The text directly quotes UN resolutions stating sports promote 'education, health, development and peace' and enable 'sustainable development'.",
+          "isCorrect": true
+        },
+        {
+          "text": "A form of entertainment whose main purpose is generating economic activity.",
+          "rationale": "While sports do generate economic activity, the UN's focus is on its contribution to broader social and development objectives.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The establishment of an International Day of Sports for Development and Peace reveals the organization's priorities."
+    },
+    {
+      "question": "What is the central strategy emphasized by various international panelists for successfully safeguarding sports from corruption?",
+      "answerOptions": [
+        {
+          "text": "A collaborative approach involving a wide range of different stakeholders.",
+          "rationale": "The text repeatedly mentions the need for a 'collaborative approach' and 'multi-actor cooperation' involving governments, sports organizations, civil society, and more.",
+          "isCorrect": true
+        },
+        {
+          "text": "Relying solely on the actions of criminal justice authorities to prosecute offenders.",
+          "rationale": "While law enforcement is a crucial partner, the panelists stressed that it is just one part of a much broader cooperative effort.",
+          "isCorrect": false
+        },
+        {
+          "text": "A top-down approach managed exclusively by the International Olympic Committee.",
+          "rationale": "The IOC is presented as a key partner and leader, but the model described is one of partnership (like IPACS), not exclusive control.",
+          "isCorrect": false
+        },
+        {
+          "text": "Focusing all resources on grassroots activism by fans to report misconduct.",
+          "rationale": "Fan and civil society involvement is important, but it's part of a larger, collaborative structure, not the sole strategy.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "The solution described involves bringing many different groups, from government to academia to sports bodies, to the same table."
+    },
+    {
+      "question": "What is a primary reason for focusing anti-corruption efforts on educating young athletes?",
+      "answerOptions": [
+        {
+          "text": "They are considered more effective than law enforcement in undercover operations.",
+          "rationale": "This exaggerates the role of young athletes; their value lies in their unique position, not in acting as professional investigators.",
+          "isCorrect": false
+        },
+        {
+          "text": "All major sports organizations are now legally required to be led by people under 30.",
+          "rationale": "This is factually incorrect and not mentioned in the source material.",
+          "isCorrect": false
+        },
+        {
+          "text": "They are often in a position to witness and identify corrupt acts from within the industry.",
+          "rationale": "The text notes that despite their age, athletes might witness corruption, making their awareness and knowledge of reporting channels crucial.",
+          "isCorrect": true
+        },
+        {
+          "text": "Young people are the primary creators and operators of illegal online betting platforms.",
+          "rationale": "The text identifies youth as being affected by these platforms, not as the main perpetrators behind them.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Consider the unique perspective someone has when they are an active participant inside the system."
+    },
+    {
+      "question": "The International Partnership Against Corruption in Sports (IPACS) has four task forces. What is the specific objective of its Task Force focused on the selection of major sporting events?",
+      "answerOptions": [
+        {
+          "text": "To reduce the risk of corruption in building sports-related infrastructure.",
+          "rationale": "This objective is the focus of Task Force 1, which deals with procurement related to events and infrastructure.",
+          "isCorrect": false
+        },
+        {
+          "text": "To enhance cooperation between law enforcement and sports organizations.",
+          "rationale": "This is the mission of Task Force 4, which is dedicated to improving this specific channel of communication.",
+          "isCorrect": false
+        },
+        {
+          "text": "To ensure integrity in the process of choosing host cities and nations.",
+          "rationale": "This aligns directly with the description of Task Force 2: 'ensuring integrity in the selection of major sporting events'.",
+          "isCorrect": true
+        },
+        {
+          "text": "To optimize good governance principles within sports organizations.",
+          "rationale": "This is the broader goal of Task Force 3, which deals with compliance and mitigating corruption risk through governance.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "This task force's work happens before any construction begins or athletes arrive; it's about the decision of where an event will take place."
+    },
+    {
+      "question": "A comprehensive strategy for protecting sports requires more than just laws and regulations. What two other components are identified as being essential to bind the strategy together?",
+      "answerOptions": [
+        {
+          "text": "Increased ticket prices and larger stadiums.",
+          "rationale": "These are commercial considerations and are not presented as core components of an anti-corruption strategy.",
+          "isCorrect": false
+        },
+        {
+          "text": "Media blackouts and confidential investigations.",
+          "rationale": "The text emphasizes awareness and collaboration, which are contrary to the idea of media blackouts.",
+          "isCorrect": false
+        },
+        {
+          "text": "Awareness-raising activities and a realistic implementation plan.",
+          "rationale": "The text explicitly states the need to bind the legal framework with 'awareness-raising activities (such as education and youth empowerment)' and 'a realistic implementation strategy'.",
+          "isCorrect": true
+        },
+        {
+          "text": "Athlete surveillance and mandatory lie-detector tests.",
+          "rationale": "These are highly invasive measures that are not mentioned as part of the recommended collaborative and educational approach.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "A rule is only effective if people understand it and there is a practical plan to apply it."
+    },
+    {
+      "question": "Which of the following actions best exemplifies the youth recommendation to 'Engage with Sports Organizations'?",
+      "answerOptions": [
+        {
+          "text": "Launching a viral social media campaign about the dangers of doping.",
+          "rationale": "This action aligns more closely with the separate recommendation to 'Raise Awareness' using communication channels.",
+          "isCorrect": false
+        },
+        {
+          "text": "Joining a youth council within a national sports body to advocate for policy changes.",
+          "rationale": "This describes actively participating within the structure of an existing organization to influence decision-making, which is the essence of this recommendation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Volunteering for an independent civil society group that monitors sports integrity.",
+          "rationale": "This is a valuable contribution but aligns more with the recommendation to 'Collaborate with NGOs and other existing civil society efforts'.",
+          "isCorrect": false
+        },
+        {
+          "text": "Organizing a local tournament based on the principles of fairness and respect.",
+          "rationale": "This is an excellent example of 'Promoting Ethical Values' by leading by example, which is another one of the five suggestions.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "This specific action involves working from 'the inside' of an official sports entity."
+    },
+    {
+      "question": "What is the primary role of the United Nations Convention against Corruption (UNCAC) in the effort to safeguard sports?",
+      "answerOptions": [
+        {
+          "text": "It serves as a global police force with direct authority to arrest corrupt officials.",
+          "rationale": "UNCAC is a legal framework and a convention, not an operational law enforcement agency with powers of arrest.",
+          "isCorrect": false
+        },
+        {
+          "text": "It provides a foundational legal framework for member states to combat corruption.",
+          "rationale": "The text describes UNCAC as a 'legal base' used to ensure national legislation, regulations, and policies align with anti-corruption principles.",
+          "isCorrect": true
+        },
+        {
+          "text": "It is a funding mechanism that pays for the construction of stadiums.",
+          "rationale": "The convention's purpose is legal and policy-oriented, not financial investment in infrastructure.",
+          "isCorrect": false
+        },
+        {
+          "text": "It is an organization that directly mediates disputes between athletes and teams.",
+          "rationale": "This describes the function of an arbitration body, whereas UNCAC provides a high-level legal structure for states.",
+          "isCorrect": false
+        }
+      ],
+      "hint": "Think of this convention as a blueprint that helps countries build their own rules and policies."
+    }
+  ]
+}

@@ -1,0 +1,559 @@
+/* Welcome Page Styles - Vintage Parchment */
+.welcome-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Blurred map background */
+.welcome-page::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    /* Extend beyond edges to hide blur artifacts */
+    background: url('../../public/background.png') center center / cover no-repeat;
+    filter: blur(8px);
+    z-index: 0;
+}
+
+/* Wooden frame border effect */
+.welcome-page::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        /* Top wooden border */
+        linear-gradient(to bottom, #5C3D1E 0%, #8B5A2B 8px, transparent 8px),
+        /* Bottom wooden border */
+        linear-gradient(to top, #5C3D1E 0%, #8B5A2B 8px, transparent 8px),
+        /* Left wooden border */
+        linear-gradient(to right, #5C3D1E 0%, #8B5A2B 8px, transparent 8px),
+        /* Right wooden border */
+        linear-gradient(to left, #5C3D1E 0%, #8B5A2B 8px, transparent 8px);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.welcome-content-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Main Layout - Video and Welcome Container side by side */
+.welcome-main-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Video Container - Transparent */
+.welcome-video-container {
+    flex-shrink: 0;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    background: transparent;
+    animation: mapUnroll 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Hide browser extension overlays */
+.welcome-video-container>*:not(video) {
+    display: none !important;
+}
+
+.welcome-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hide all video controls */
+.welcome-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.welcome-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.welcome-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.welcome-video::-moz-media-controls {
+    display: none !important;
+}
+
+/* Responsive - Stack vertically on smaller screens */
+@media (max-width: 900px) {
+    .welcome-main-layout {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .welcome-video-container {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+}
+
+.welcome-page.fade-out {
+    animation: fadeOut 0.6s ease-out forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(1.05) rotate(5deg);
+    }
+}
+
+/* Vintage illustrated background with decorative elements */
+.welcome-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Corner decorations - vintage city buildings */
+.welcome-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        /* Subtle vintage texture overlay */
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.08;
+}
+
+/* Hide floating shapes - replace with vintage style */
+.floating-shape {
+    display: none;
+}
+
+/* Decorative corner illustrations */
+.shape-1,
+.shape-2,
+.shape-3,
+.shape-4 {
+    display: none;
+}
+
+/* Vintage corner decorations */
+.welcome-background::after {
+    content: '';
+    position: absolute;
+    inset: 12px;
+    border: 3px solid rgba(139, 90, 43, 0.2);
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+/* Main Container - Authentic Parchment Map Style */
+.welcome-container {
+    width: 100%;
+    max-width: 420px;
+    background:
+        /* Aged stain spots */
+        radial-gradient(ellipse 80px 60px at 15% 20%, rgba(160, 120, 60, 0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 100px 80px at 85% 75%, rgba(140, 100, 50, 0.1) 0%, transparent 70%),
+        radial-gradient(ellipse 60px 50px at 70% 15%, rgba(150, 110, 55, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 90px 70px at 25% 85%, rgba(145, 105, 52, 0.1) 0%, transparent 70%),
+        /* Map grid lines - subtle */
+        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(139, 90, 43, 0.04) 40px, rgba(139, 90, 43, 0.04) 41px),
+        repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(139, 90, 43, 0.04) 40px, rgba(139, 90, 43, 0.04) 41px),
+        /* Base parchment gradient - aged look */
+        linear-gradient(135deg,
+            #e8d4b0 0%,
+            #f5e6c8 10%,
+            #faf0dc 25%,
+            #f8edd8 40%,
+            #fdf5e6 50%,
+            #f8edd8 60%,
+            #f5e6c8 75%,
+            #e8d4b0 90%,
+            #d4c4a0 100%);
+    border: none;
+    border-radius: 4px;
+    padding: 2rem 1.75rem;
+    box-shadow:
+        /* Inner glow for depth */
+        inset 0 0 60px rgba(139, 90, 43, 0.15),
+        inset 0 0 20px rgba(100, 70, 30, 0.1),
+        /* Burnt/aged edge effect */
+        inset 3px 3px 0 rgba(180, 140, 90, 0.3),
+        inset -3px -3px 0 rgba(120, 80, 40, 0.2),
+        /* Outer shadow */
+        0 4px 20px rgba(0, 0, 0, 0.25),
+        0 8px 40px rgba(80, 50, 20, 0.3);
+    animation: mapUnroll 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    z-index: 1;
+    /* Slight rotation for authentic map feel */
+    transform: rotate(-0.5deg);
+}
+
+/* Parchment texture + map decorations overlay */
+.welcome-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        /* Compass rose in corner */
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='35' fill='none' stroke='%238B5A2B' stroke-width='1' opacity='0.25'/%3E%3Ccircle cx='50' cy='50' r='25' fill='none' stroke='%238B5A2B' stroke-width='0.5' opacity='0.2'/%3E%3Cpath d='M50 15 L53 45 L50 50 L47 45 Z' fill='%238B5A2B' opacity='0.3'/%3E%3Cpath d='M50 85 L53 55 L50 50 L47 55 Z' fill='%235C4033' opacity='0.15'/%3E%3Cpath d='M15 50 L45 47 L50 50 L45 53 Z' fill='%235C4033' opacity='0.15'/%3E%3Cpath d='M85 50 L55 47 L50 50 L55 53 Z' fill='%238B5A2B' opacity='0.3'/%3E%3Ctext x='50' y='12' text-anchor='middle' font-size='8' fill='%238B5A2B' opacity='0.3' font-family='serif'%3EN%3C/text%3E%3Ctext x='50' y='95' text-anchor='middle' font-size='8' fill='%238B5A2B' opacity='0.2' font-family='serif'%3ES%3C/text%3E%3Ctext x='8' y='53' text-anchor='middle' font-size='8' fill='%238B5A2B' opacity='0.2' font-family='serif'%3EW%3C/text%3E%3Ctext x='92' y='53' text-anchor='middle' font-size='8' fill='%238B5A2B' opacity='0.3' font-family='serif'%3EE%3C/text%3E%3C/svg%3E") no-repeat bottom 15px right 15px,
+        /* Paper texture noise */
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-size: 80px 80px, cover;
+    opacity: 0.5;
+    pointer-events: none;
+    border-radius: 4px;
+    mix-blend-mode: overlay;
+}
+
+/* Decorative border and corner flourishes */
+.welcome-container::after {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 2px solid rgba(139, 90, 43, 0.25);
+    border-radius: 2px;
+    pointer-events: none;
+    /* Corner decorations via box-shadow */
+    box-shadow:
+        /* Top-left corner flourish */
+        inset 20px 20px 0 -18px rgba(139, 90, 43, 0.2),
+        /* Top-right corner flourish */
+        inset -20px 20px 0 -18px rgba(139, 90, 43, 0.2),
+        /* Bottom-left corner flourish */
+        inset 20px -20px 0 -18px rgba(139, 90, 43, 0.2),
+        /* Bottom-right corner flourish */
+        inset -20px -20px 0 -18px rgba(139, 90, 43, 0.2);
+}
+
+/* Map unroll animation */
+@keyframes mapUnroll {
+    0% {
+        transform: rotate(-2deg) scale(0.8) translateY(-20px);
+        opacity: 0;
+        filter: blur(2px);
+    }
+
+    50% {
+        transform: rotate(0.5deg) scale(1.02);
+        opacity: 1;
+        filter: blur(0);
+    }
+
+    100% {
+        transform: rotate(-0.5deg) scale(1);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Header */
+.welcome-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-container {
+    margin-bottom: 1rem;
+}
+
+/* Torch Icon Emblem */
+.logo-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #f5e6c8 0%, #e8d4a8 100%);
+    border: 3px solid #5C4033;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.3),
+        0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-icon svg {
+    width: 50px;
+    height: 50px;
+    stroke: #5C4033;
+    stroke-width: 2.5px;
+    fill: none;
+}
+
+.logo-icon svg circle {
+    fill: none;
+}
+
+/* Title Styles */
+.welcome-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #8B3A3A;
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow:
+        1px 1px 0px #fff,
+        2px 2px 2px rgba(0, 0, 0, 0.15);
+    font-family: 'Fredoka', 'Comic Sans MS', cursive, sans-serif;
+}
+
+.title-highlight {
+    display: block;
+    color: #D4A84B;
+    font-size: 2.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow:
+        2px 2px 0px #8B5A2B,
+        3px 3px 0px rgba(0, 0, 0, 0.3),
+        0 0 10px rgba(212, 168, 75, 0.3);
+    -webkit-text-stroke: 1.5px #8B5A2B;
+    margin-top: 0.25rem;
+}
+
+.welcome-subtitle {
+    color: #5C4033;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 320px;
+    margin: 1rem auto 0;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Form */
+.welcome-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.input-label {
+    color: #5C4033;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Wooden Frame Input */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #8B5A2B 0%, #6B4423 50%, #8B5A2B 100%);
+    border-radius: 8px;
+    padding: 6px;
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.3),
+        0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input-icon {
+    position: absolute;
+    left: 1.25rem;
+    width: 24px;
+    height: 24px;
+    color: #8B7355;
+    z-index: 10;
+    stroke-width: 1.5px;
+}
+
+.name-input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Fredoka', sans-serif;
+    color: #5C4033;
+    background: linear-gradient(to bottom, #f5e6c8 0%, #e8d4a8 100%);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: inset 0 2px 6px rgba(139, 90, 43, 0.2);
+    transition: all 0.2s ease;
+}
+
+.name-input::placeholder {
+    color: #A08060;
+    font-weight: 500;
+}
+
+.name-input:focus {
+    background: linear-gradient(to bottom, #fff8e8 0%, #f5e6c8 100%);
+    box-shadow: inset 0 2px 8px rgba(139, 90, 43, 0.25);
+}
+
+/* Wooden Button */
+.enter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #FDF5E6;
+    background: linear-gradient(to bottom,
+            #8B5A2B 0%,
+            #6B4423 20%,
+            #5C3D1E 50%,
+            #6B4423 80%,
+            #8B5A2B 100%);
+    border: 4px solid #4A3520;
+    border-radius: 8px;
+    cursor: not-allowed;
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.15),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.2),
+        0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Wood grain effect on button */
+.enter-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(90deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.03) 2px,
+            rgba(0, 0, 0, 0.03) 4px);
+    pointer-events: none;
+}
+
+.enter-button.active {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.enter-button.active:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, 0.2),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.2),
+        0 6px 12px rgba(0, 0, 0, 0.35);
+    background: linear-gradient(to bottom,
+            #9B6A3B 0%,
+            #7B5433 20%,
+            #6C4D2E 50%,
+            #7B5433 80%,
+            #9B6A3B 100%);
+}
+
+.enter-button.active:active {
+    transform: translateY(1px);
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.3),
+        0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-arrow {
+    width: 22px;
+    height: 22px;
+    stroke-width: 2.5px;
+    transition: transform 0.3s ease;
+}
+
+.enter-button.active:hover .button-arrow {
+    transform: translateX(4px);
+}
+
+/* Footer */
+.welcome-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-text {
+    color: #8B5A2B;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .welcome-container {
+        padding: 2rem 1.5rem;
+        margin: 0 0.75rem;
+        transform: rotate(-0.3deg);
+    }
+
+    .welcome-title {
+        font-size: 1.6rem;
+    }
+
+    .title-highlight {
+        font-size: 1.9rem;
+    }
+
+    .logo-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+}

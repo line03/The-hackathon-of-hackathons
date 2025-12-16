@@ -1,0 +1,253 @@
+/* Blur the background image */
+.world-background {
+    filter: blur(0.7px);
+}
+
+/* Video Container - Transparent */
+.law-world-video-container {
+    position: absolute;
+    bottom: 41%;
+    left: 51%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 45%;
+    overflow: hidden;
+    background: transparent;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Hide browser extension overlays */
+.law-world-video-container>*:not(video) {
+    display: none !important;
+}
+
+.law-world-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Hide all video controls */
+.law-world-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.law-world-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.law-world-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.law-world-video::-moz-media-controls {
+    display: none !important;
+}
+
+/* Responsive video sizing */
+@media (max-width: 768px) {
+    .law-world-video-container {
+        width: 280px;
+        height: 280px;
+        bottom: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .law-world-video-container {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.law-world-buttons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.law-world-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    pointer-events: auto;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.law-world-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.3),
+            transparent);
+    transition: left 0.5s ease;
+}
+
+.law-world-btn:hover::before {
+    left: 100%;
+}
+
+/* Secondary style - White background, black text */
+.law-world-btn--secondary {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #000;
+}
+
+.law-world-btn--secondary:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.law-world-btn--secondary:active {
+    transform: scale(1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Disabled state for non-functional buttons */
+.law-world-btn--disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.law-world-btn--disabled:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.law-world-btn--disabled:hover::before {
+    left: -100%;
+}
+
+/* ===== BUTTON POSITIONS ===== */
+
+/* General provisions - Right side (scrolls/documents area) */
+.law-world-btn--general-provisions {
+    top: 20%;
+    right: 20%;
+    transform: translateX(50%);
+}
+
+.law-world-btn--general-provisions:hover {
+    transform: translateX(50%) scale(1.05);
+}
+
+/* Preventive measures - Upper LEFT (PREVENTION chamber with scales) */
+.law-world-btn--preventive-measures {
+    top: 18%;
+    left: 28%;
+    transform: translateX(-50%);
+}
+
+.law-world-btn--preventive-measures:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+/* Criminalization and law enforcement - Far LEFT (chamber with gavel) */
+.law-world-btn--criminalization {
+    top: 42%;
+    left: 12%;
+    transform: translateX(-50%);
+}
+
+.law-world-btn--criminalization:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+/* International cooperation - Bottom LEFT (handshake chamber) */
+.law-world-btn--international {
+    top: 78%;
+    left: 22%;
+    transform: translateX(-50%);
+}
+
+.law-world-btn--international:hover {
+    transform: translateX(-50%) scale(1.05);
+}
+
+/* Asset recovery - RIGHT side (treasure chest chamber) */
+.law-world-btn--asset-recovery {
+    top: 52%;
+    right: 15%;
+    transform: translateX(50%);
+}
+
+.law-world-btn--asset-recovery:hover {
+    transform: translateX(50%) scale(1.05);
+}
+
+/* Technical assistance - Bottom RIGHT (technical documents chamber) */
+.law-world-btn--technical {
+    top: 72%;
+    right: 20%;
+    transform: translateX(50%);
+    white-space: normal;
+    text-align: center;
+    max-width: 280px;
+}
+
+.law-world-btn--technical:hover {
+    transform: translateX(50%) scale(1.05);
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+
+@media (max-width: 1024px) {
+    .law-world-btn {
+        padding: 10px 16px;
+        font-size: 0.75rem;
+    }
+
+    .law-world-btn--technical {
+        max-width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .law-world-btn {
+        padding: 8px 12px;
+        font-size: 0.65rem;
+        border-radius: 8px;
+    }
+
+    .law-world-btn--technical {
+        max-width: 200px;
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .law-world-btn {
+        padding: 6px 10px;
+        font-size: 0.55rem;
+        border-width: 1.5px;
+    }
+
+    .law-world-btn--technical {
+        max-width: 160px;
+        font-size: 0.5rem;
+    }
+}

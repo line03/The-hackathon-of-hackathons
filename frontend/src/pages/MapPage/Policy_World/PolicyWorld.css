@@ -1,0 +1,67 @@
+/* PolicyWorld.css */
+
+/* Video Container - Positioned on the right side */
+.policy-world-video-container {
+    position: absolute;
+    bottom: 18%;
+    left: 95%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    background: transparent;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Allow pointer events for the video if we want to toggle mute */
+.policy-world-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    pointer-events: auto;
+    transform: scaleX(-1);
+}
+
+/* Hide browser extension overlays */
+.policy-world-video-container>*:not(video) {
+    display: none !important;
+}
+
+/* Hide all video controls */
+.policy-world-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.policy-world-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.policy-world-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.policy-world-video::-moz-media-controls {
+    display: none !important;
+}
+
+/* Responsive video sizing */
+@media (max-width: 768px) {
+    .policy-world-video-container {
+        width: 280px;
+        height: 280px;
+        right: 50%;
+        transform: translateX(50%);
+        /* Center on small screens? Or keep right? sticking to responsive pattern from LawWorld */
+        bottom: 5%;
+        top: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .policy-world-video-container {
+        width: 200px;
+        height: 200px;
+    }
+}

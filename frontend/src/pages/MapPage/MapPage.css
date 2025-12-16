@@ -1,0 +1,260 @@
+/* MapPage.css - Image-based Map Style */
+.map-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    /* Keep world/map views fixed without showing the window scrollbar */
+    overflow: hidden;
+}
+
+/* Main Content */
+.map-content {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+    background: none;
+}
+
+/* Map Image */
+.map-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    pointer-events: none; /* let hover reach overlays beneath */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.law-world-overlay,
+.theatre-world-overlay,
+.policy-world-overlay {
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.35s ease, transform 0.3s ease;
+}
+
+/* Dim background when hovering over any world */
+.map-container:has(.law-world-overlay:hover) .map-image,
+.map-container:has(.theatre-world-overlay:hover) .map-image,
+.map-container:has(.policy-world-overlay:hover) .map-image {
+    filter: brightness(0.4);
+}
+
+/* Law World Overlay - positioned over the judicial district on the left */
+.law-world-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 38%;
+    /* Adjust based on the actual size of the judicial area */
+    height: auto;
+    object-fit: contain;
+    pointer-events: auto;
+    z-index: 2;
+    transform: translate(-0.5%, 2%);
+    /* Fine-tune positioning */
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.law-world-overlay:hover {
+    opacity: 1;
+    z-index: 3;
+    transform: translate(0%, 7.5%) translateY(-30px) scale(1.1);
+}
+
+/* Hide law world when hovering over theatre world or policy world */
+.map-container:has(.theatre-world-overlay:hover) .law-world-overlay,
+.map-container:has(.policy-world-overlay:hover) .law-world-overlay {
+    opacity: 0;
+}
+
+/* Theatre World Overlay - positioned over the theatre district on the right */
+.theatre-world-overlay {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 43.5%;
+    /* Adjust based on the actual size of the theatre area */
+    height: auto;
+    object-fit: contain;
+    pointer-events: auto;
+    z-index: 2;
+    transform: translate(0%, 36.5%);
+    /* Fine-tune positioning */
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.theatre-world-overlay:hover {
+    opacity: 1;
+    z-index: 3;
+    transform: translate(0%, 40%) translateY(-30px) scale(1.1);
+}
+
+/* Hide theatre world when hovering over law world or policy world */
+.map-container:has(.law-world-overlay:hover) .theatre-world-overlay,
+.map-container:has(.policy-world-overlay:hover) .theatre-world-overlay {
+    opacity: 0;
+}
+
+/* Policy World Overlay - positioned in the middle */
+.policy-world-overlay {
+    position: absolute;
+    left: 58.5%;
+    top: 0;
+    width: 56%;
+    /* Adjust based on the actual size of the policy area */
+    height: auto;
+    object-fit: contain;
+    pointer-events: auto;
+    z-index: 2;
+    transform: translate(-50%, -6.5%);
+    /* Center horizontally, fine-tune vertically */
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.policy-world-overlay:hover {
+    opacity: 1;
+    z-index: 3;
+    transform: translate(-50%, -3%) translateY(-30px) scale(1.05);
+}
+
+/* Hide policy world when hovering over law world or theatre world */
+.map-container:has(.law-world-overlay:hover) .policy-world-overlay,
+.map-container:has(.theatre-world-overlay:hover) .policy-world-overlay {
+    opacity: 0;
+}
+
+/* Label visibility - hidden by default, shown on hover */
+.law-world-label,
+.theatre-world-label,
+.policy-world-label {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Show labels when hovering over corresponding images */
+.map-container:has(.law-world-overlay:hover) .law-world-label {
+    opacity: 1;
+}
+
+.map-container:has(.theatre-world-overlay:hover) .theatre-world-label {
+    opacity: 1;
+}
+
+.map-container:has(.policy-world-overlay:hover) .policy-world-label {
+    opacity: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.map-container {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .map-content {
+        padding: 0.5rem;
+    }
+
+    .map-container {
+        border-radius: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-content {
+        padding: 0.25rem;
+    }
+
+    .map-container {
+        border-radius: 8px;
+    }
+}
+
+/* Video Overlay */
+.map-page-video-container {
+    position: fixed;
+    bottom: 0%;
+    left: -5%;
+    width: 40%;
+    height: 40%;
+    z-index: 10;
+    pointer-events: none;
+    overflow: hidden;
+    background: transparent;
+}
+
+.map-page-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    pointer-events: none;
+    background: transparent;
+}
+
+/* Hide controls */
+.map-page-video::-webkit-media-controls {
+    display: none !important;
+}
+
+.map-page-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.map-page-video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.map-page-video::-moz-media-controls {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .map-page-video-container {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Hack to hide specific browser extension overlays that might be injecting into the DOM */
+.vsc-controller {
+    display: none !important;
+}
