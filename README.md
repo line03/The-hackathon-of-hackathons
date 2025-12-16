@@ -91,6 +91,8 @@ Open [http://localhost:5173](http://localhost:5173) (or the URL shown in the ter
 *   **💭 Reflection Analysis**: Write about corruption scenarios and get graded on your analysis of actors, harms, and breached duties.
 *   **🎨 Dynamic UI**: A polished, "wow-factor" design with animations and responsive layouts.
 
+<img width="912" height="408" alt="image" src="https://github.com/user-attachments/assets/a5a80cdf-020e-4b1e-94c6-a68034e67e1f" />
+
 ## 🔧 Technologies
 
 *   **Frontend**: React, TypeScript, Vite, CSS Modules.
